@@ -1,4 +1,4 @@
-# Web-Dev-Journey 🩵
+# Web-Dev-Journey 🧑🏻‍💻
 
 Here i will commit all the regular activities about my web development journey !! ☺️
 
