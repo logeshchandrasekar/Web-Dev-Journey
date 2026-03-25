@@ -12,3 +12,9 @@ and a sample fashion blog with plain html to track progress. 💪🏻
 
 Date-(24 march 2026)
 - Table creation in HTML
+
+Date-(25 march 2026)
+- form creation and input types
+
+Date-(26 march 2026)
+- Semantic HTML & its structure
