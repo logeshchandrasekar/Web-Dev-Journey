@@ -6,15 +6,13 @@ Structurized by HTML5, CSS3, js and others in detail for easier access and ease 
 
 PROGRESS DESCRIPTION :
 
-Date-(22 to 23 of march 2026)
+Date-(22 to 23  march 2026)
 - As of now in html, i did a sample webpage using various tags with another linked html file for interlinking of two files in same folder.
 and a sample fashion blog with plain html to track progress. 💪🏻
 
-Date-(24 march 2026)
+Date-(24 & 25 march 2026)
 - Table creation in HTML
-
-Date-(25 march 2026)
-- form creation and input types
+- Form creation and input types
 
 Date-(26 march 2026)
 - Semantic HTML & its structure
