@@ -8,11 +8,11 @@ PROGRESS DESCRIPTION :
 
 Date-(22 to 23  march 2026)
 - As of now in html, i did a sample webpage using various tags with another linked html file for interlinking of two files in same folder.
-and a sample fashion blog with plain html to track progress. 💪🏻
+and a sample fashion blog with plain html to track progress.
 
 Date-(24 & 25 march 2026)
 - Table creation in HTML
-- Form creation and input types
+- Form creation
 
 Date-(26 march 2026)
-- Semantic HTML & its structure
+- input types in forms with submission
