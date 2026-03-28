@@ -16,3 +16,8 @@ Date-(24 & 25 march 2026)
 
 Date-(26 march 2026)
 - input types in forms with submission
+
+NOTE - Up until now, those topics refers to html basics and goes gradually upon a better level of webpage understanding !!....revision must be done
+
+Date-(27 march 2026)
+- Revision Done
