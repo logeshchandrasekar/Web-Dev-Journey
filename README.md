@@ -15,9 +15,19 @@ Date-(24 & 25 march 2026)
 - Form creation
 
 Date-(26 march 2026)
-- input types in forms with submission
-
-NOTE - Up until now, those topics refers to html basics and goes gradually upon a better level of webpage understanding !!....revision must be done
+- Input types in forms with submission
 
 Date-(27 march 2026)
-- Revision Done
+- Form validation attributes
+
+NOTE - Up until now, those topics refers to html basics and goes gradually upon a better level of webpage understanding !!....revision must be done 🦾
+
+Date-(28 march 2026)
+- Revision done !
+
+Date-(29 march 2026)
+- Semantic HTML and attributes
+
+These are the enough HTML topics to make a clean and clear webpage structures on your own...After a clear implementation and revision on these topics, we can move on to CSS 😁.
+
+Date-(30 march 2026)
