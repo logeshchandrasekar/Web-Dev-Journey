@@ -11,3 +11,10 @@
     }
   </style>
 </head>
+
+//styling paragraph element in external stylesheets
+
+    p{
+      color: green;
+    }
+(note: in a seperate .css file)
