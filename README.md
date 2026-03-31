@@ -20,7 +20,7 @@ Date-(26 march 2026)
 Date-(27 march 2026)
 - Form validation attributes
 
-NOTE - Up until now, those topics refers to html basics and goes gradually upon a better level of webpage understanding !!....revision must be done 🦾
+# Up until now, those topics refers to html basics and goes gradually upon a better level of webpage understanding !!....revision must be done 🦾
 
 Date-(28 march 2026)
 - Revision done !
@@ -28,6 +28,10 @@ Date-(28 march 2026)
 Date-(29 march 2026)
 - Semantic HTML and attributes
 
-These are the enough HTML topics to make a clean and clear webpage structures on your own...After a clear implementation and revision on these topics, we can move on to CSS 😁.
+# These are the enough HTML topics to make a clean and clear webpage structures on your own...After a clear implementation and revision on these topics, we can move on to CSS 😁.
 
 Date-(30 march 2026)
+- CSS syntax and implementation
+
+Date-(31 march 2026)
+- Selectors and its types
