@@ -35,3 +35,9 @@ Date-(30 march 2026)
 
 Date-(31 march 2026)
 - Selectors and its types
+
+Date-(1 april 2026)
+- selectors types and visual rules in CSS
+
+Date-(2 april 2026)
+-
