@@ -28,7 +28,7 @@ Date-(28 march 2026)
 Date-(29 march 2026)
 - Semantic HTML and attributes
 
-// These are the enough HTML topics to make a clean and clear webpage structures on your own...After a clear implementation and revision on these topics, we can move on to CSS 😁. //
+// These are the enough HTML topics to make a clean & clear webpage structure on your own...After a proper implementation and revision on those topics, we can move on to CSS 😁. //
 
 Date-(30 march 2026)
 - CSS syntax and implementation
