@@ -1,5 +1,5 @@
 * {
-  border: 1px solid red;
+  background-color: darkblue;
 }
 
 p {
@@ -44,4 +44,37 @@ a:hover {
 
 #publish-time {
   color: lightgray;
+}
+
+h5 {
+  color: yellow;
+}
+
+.author-class {
+  color: pink;
+}
+
+#author-id {
+  color: cornflowerblue;
+}
+
+h2.destination {
+  font-family: Tahoma;
+}
+
+.description h5 {
+  color: blueviolet;
+}
+
+li h4 {
+  color: gold;
+}
+
+h4 {
+  color: dodgerblue;
+}
+
+li,
+h5 {
+  font-family: monospace;
 }
