@@ -37,10 +37,11 @@ Date-(31 march 2026)
 - Selectors and its types
 
 Date-(1 april 2026)
-- selectors types pt 1
+- Selectors types pt 1
 
 Date-(2 april 2026)
 - Selectors types pt 2
 - Text & image styling (visuals)
+- Box model pt 1
 
 Date-(3 april 2026)
