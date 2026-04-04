@@ -1,7 +1,6 @@
 * {
   box-sizing: border-box;
 }
-
 /* *{
     margin: 0;
     padding: 0;
@@ -132,3 +131,20 @@ p {
   border: 1px solid red;
   color: red;
 }
+
+/*
+	* Box model — Defines how an element’s size and spacing are measured (content + padding + border + margin).
+	* Content (height & width) — The actual area that holds text or other content; you set its size with height and width (in px, %, etc.).
+	* Padding — Space inside the element between the content and the border; increases the clickable/visible interior without affecting neighboring elements.
+	* Border — The line that wraps the padding and content; can be styled (color, width, dashed/solid, etc.).
+	* Margin — Space outside the border that separates the element from other elements.
+	* Horizontal margins — Left and right margins add together between side-by-side elements (total space = right margin of one + left margin of the other).
+	* Vertical margins — Top and bottom margins between stacked elements collapse, meaning the space equals the larger of the two margins (not their sum).
+	* margin: 0 auto — A common shorthand to horizontally center a block element inside its parent when the element has an explicit width (0 sets top/bottom margins, auto makes left/right adjust).
+	* overflow — Controls what happens to content that doesn’t fit inside the element’s content area:
+		* visible — default; overflow shows outside the box.
+		* hidden — extra content is clipped (not shown).
+		* scroll — scrollbars appear so the user can scroll to see overflowed content.
+	* visibility — Shows or hides an element:
+		* visible — element is shown.
+		* hidden — element is invisible but still takes up layout space. */
