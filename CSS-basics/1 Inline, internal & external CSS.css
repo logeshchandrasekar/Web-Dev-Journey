@@ -1,8 +1,8 @@
-// Styling paragraph element inline style
+/* Styling paragraph element inline style */
 
 <p style='color:blue;font-size: 20px;'> Im Loki </p>
 
-// Styling paragraph element in internal stylesheets
+/* Styling paragraph element in internal stylesheets */
 
 <head>
   <style>
@@ -12,7 +12,7 @@
   </style>
 </head>
 
-//styling paragraph element in external stylesheets
+/* styling paragraph element in external stylesheets */
 
     p{
       color: green;
