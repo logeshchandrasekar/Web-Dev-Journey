@@ -1,6 +1,18 @@
+* {
+  box-sizing: border-box;
+}
+
+/* *{
+    margin: 0;
+    padding: 0;
+}
+NOTE: Use the above code to change the default box model of the browser while developing
+and some additional selectors besides box model is used, for a complete web page */
 body {
   background-color: white;
   font-family: 'Raleway', sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 .navigation ul {
@@ -22,6 +34,10 @@ body {
   letter-spacing: 4px;
 }
 
+.donate{
+  visibility: hidden;
+}
+
 #banner {
   background-image: url("https://content.codecademy.com/courses/web-101/unit-6/htmlcss1-img_tahoe.jpeg");
   background-size: cover;
@@ -39,10 +55,12 @@ body {
 }
 
 #main {
+  margin: 0 auto;
   padding: 40px;
   text-align: center;
   width: 400px;
-  margin: 0 auto;
+  height: 1000px;
+  overflow: scroll;
 }
 
 h1 {
@@ -78,8 +96,8 @@ p {
 }
 
 .pull-quote {
-  width: 350px;
   margin: 0 auto;
+  width: 400px;
 }
 
 .byline {
