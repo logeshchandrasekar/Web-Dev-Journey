@@ -4,7 +4,7 @@ Here i will commit all the regular activities about my web development journey !
 
 Structurized by HTML5, CSS3, js and others in detail for easier access and ease to learn 👆🏻
 
-PROGRESS DESCRIPTION :
+PROGRESS DESCRIPTION ❤️:
 
 Date-(22 to 23  march 2026)
 - As of now in html, i did a sample webpage using various tags with another linked html file for interlinking of two files in same folder.
@@ -20,7 +20,7 @@ Date-(26 march 2026)
 Date-(27 march 2026)
 - Form validation attributes
 
-// Up until now, those topics refers to html basics and goes gradually upon a better level of webpage understanding !!....revision must be done 🦾 //
+``` Up until now, topics above refers to html basics and goes gradually upon a better level of webpage understanding !!....revision is necessary ```
 
 Date-(28 march 2026)
 - Revision done !
@@ -28,7 +28,7 @@ Date-(28 march 2026)
 Date-(29 march 2026)
 - Semantic HTML and attributes
 
-// These are the enough HTML topics to make a clean & clear webpage structure on your own...After a proper implementation and revision on those topics, we can move on to CSS 😁. //
+ ``` These are the enough HTML topics to make a clean & clear webpage structure on your own...After a proper implementation and revision on those topics, we can move on to CSS. ```
 
 Date-(30 march 2026)
 - CSS syntax and implementation
@@ -42,6 +42,11 @@ Date-(1 april 2026)
 Date-(2 april 2026)
 - Selectors types pt 2
 - Text & image styling (visuals)
-- Box model pt 1
 
 Date-(3 april 2026)
+- Box model pt 1
+
+Date-(4 april 2026)
+- Box model pt 2
+
+Date-(5 April 2026)
