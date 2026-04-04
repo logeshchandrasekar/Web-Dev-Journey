@@ -1,4 +1,4 @@
-form action="submission.html" method="GET">
+<form action="submission.html" method="GET">
         <label for="username">Username:</label>
         <br>
 	<input id="username" name="username" type="text" required minlength="3" maxlength="15" pattern="[a-zA-Z0-9]+">
@@ -10,3 +10,27 @@ form action="submission.html" method="GET">
         <br>
         <input type="submit" value="Submit">
       </form>
+
+<!--
+	* Client-side validation
+		* Runs in the browser before data is sent to the server
+		* Provides immediate feedback to users
+		* Prevents form submission when validation fails
+	* required attribute
+		* Ensures the input is not left empty
+		* Works on text, email, number, checkbox, select, etc.
+	* min and max attributes (number inputs)
+		* min: sets the minimum acceptable numeric value
+		* max: sets the maximum acceptable numeric value
+		* Browser prevents values outside this range
+	* minlength and maxlength attributes (text inputs)
+		* minlength: enforces a minimum number of characters
+		* maxlength: enforces a maximum number of characters
+		* Helps control input length for usernames, descriptions, etc.
+	* pattern attribute (regex)
+		* Validates input against a regular expression
+		* Useful for custom formats (phone numbers, postal codes, specific IDs)
+	* User experience and security benefits
+		* Immediate guidance on fixing input errors
+		* Reduces invalid or malformed data sent to servers
+		* Complements (but does not replace) server-side validation -->
