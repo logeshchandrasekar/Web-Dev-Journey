@@ -1,4 +1,4 @@
-# Web-Dev-Journey \^o^/
+# Web-Dev-Journey ^o^
 
 Here i will commit all the topics i learned about my web development journey !! ^_^
 
