@@ -1,1 +1,140 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Libre Baskerville', sans-serif;
+}
 
+img {
+  margin: 10px auto;
+  height: auto;
+  width: auto;
+}
+
+ul {
+  text-align: right;
+}
+
+h1 {
+  font-size: 20px;
+}
+
+/*Sizing*/
+
+.container {
+  margin: 0 auto;
+}
+
+.spacer {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.main {
+    background-color: #ffc200;
+}
+
+/*Header Section*/
+
+.header {
+  padding: 30px 0px 40px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.header li {
+  list-style: none;
+  display: inline-block;
+}
+
+.header li a {
+  color: #333;
+  margin:0;
+  border:0px;
+}
+
+/*Jumbotron Section*/
+
+.jumbotron {
+  background-color: #fff;
+  max-width: 1200px;
+  margin-left: 50px;
+}
+
+.jumbotron h2 {
+  font-size: 50px;
+  margin-bottom: 70px;
+}
+
+.jumbotron h2 span {
+  color:#ffc200;
+}
+
+.jumbotron p {
+  text-shadow: 0 0;
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 0;
+}
+
+/*Banner Section*/
+.banner {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+/*Expertise Section*/
+.cards {
+  background-color: #ffc200;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.col {
+display: inline-flex;
+flex-direction: column;
+justify-content: space-between;
+}
+
+#expertise {
+  padding: 20px;
+  background-color: #ffc200;
+  margin: 0;
+  text-align: center;
+}
+
+/*Footer Section*/
+.footer {
+  padding: 60px 0px;
+  background-color: #000;
+  color: #fff;
+}
+
+.footer h3 {
+  font-size: 20px;
+  margin-left: 20px;
+}
+
+.footer p {
+  font-size:12px;
+  margin-bottom: 0;
+  margin-left: 20px;
+}
+
+/*
+- display: flex changes an element to a block-level container with flex items inside of it.
+- display: inline-flex allows multiple flex containers to appear inline with each other.
+- justify-content is used to space items along the main axis.
+- align-items is used to space items along the cross axis.
+- flex-grow is used to specify how much space (and in what proportions) flex items absorb along the main axis.
+- flex-shrink is used to specify how much flex items shrink and in what proportions along the main axis.
+- flex-basis is used to specify the initial size of an element styled with flex-grow and/or flex-shrink.
+- flex is used to specify flex-grow, flex-shrink, and flex-basis in one declaration.
+- flex-wrap specifies that elements should shift along the cross axis if the flex container is not large enough.
+- align-content is used to space rows along the cross axis.
+- flex-direction is used to specify the main and cross axes.
+- flex-flow is used to specify flex-wrap and flex-direction in one declaration.
+- Flex containers can be nested inside of each other by declaring display: flex or display: inline-flex for children of flex containers.
+*/
