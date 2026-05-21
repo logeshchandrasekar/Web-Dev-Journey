@@ -1,0 +1,36 @@
+// The .forEach() method
+const fruits = ['mango', 'papaya', 'pineapple', 'apple'];
+fruits.forEach (fruitItems => {
+  console.log('I want to eat a ' + fruitItems);
+});
+
+// The .map() method
+const animals = ['Hen', 'elephant', 'llama', 'leopard', 'ostrich', 'Whale', 'octopus', 'rabbit', 'lion', 'dog'];
+const secretMessage = animals.map(animals => animals[0]);
+console.log(secretMessage.join(''));
+
+const bigNumbers = [100, 200, 300, 400, 500];
+const smallNumbers = bigNumbers.map(bigNumbers => bigNumbers/100);
+console.log(smallNumbers);
+
+// The .filter() method
+const randomNumbers = [375, 200, 3.14, 7, 13, 852];
+const smallNumbers = randomNumbers.filter(smallNumbers => {
+  return smallNumbers < 250;
+});
+
+const favoriteWords = ['nostalgia', 'hyperbole', 'fervent', 'esoteric', 'serene'];
+const longFavoriteWords = favoriteWords.filter(longFavoriteWords => {
+  return longFavoriteWords.length > 7;
+});
+
+const words = ['chair', 'music', 'pillow', 'brick', 'pen', 'door']; 
+const shortWords = words.filter(word => {
+  return word.length < 6;
+});
+
+console.log(smallNumbers);
+console.log(longFavoriteWords);
+console.log(shortWords);
+
+// The .findIndex() method
