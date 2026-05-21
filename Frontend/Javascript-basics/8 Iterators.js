@@ -24,14 +24,8 @@ const longFavoriteWords = favoriteWords.filter(longFavoriteWords => {
   return longFavoriteWords.length > 7;
 });
 
-const words = ['chair', 'music', 'pillow', 'brick', 'pen', 'door']; 
-const shortWords = words.filter(word => {
-  return word.length < 6;
-});
-
 console.log(smallNumbers);
 console.log(longFavoriteWords);
-console.log(shortWords);
 
 // The .findIndex() method
 const animals = ['hippo', 'tiger', 'lion', 'seal', 'cheetah', 'monkey', 'salamander', 'elephant'];
