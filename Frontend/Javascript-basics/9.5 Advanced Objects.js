@@ -65,3 +65,66 @@ const robot = {
 };
 robot.numOfSensors = 50;
 console.log(robot.numOfSensors);
+
+// Factory function
+const robotFactory = (model, mobile) => {
+  return {
+    model: model,
+    mobile: mobile,
+    beep() {
+      console.log('Beep Boop');
+    }
+  }
+};
+const wallE = robotFactory('P-500', true);
+wallE.beep();
+
+// Destructured assignment
+const robot = {
+  model: '1E78V2',
+  energyLevel: 100,
+  functionality: {
+    beep() {
+      console.log('Beep Boop');
+    },
+    fireLaser() {
+      console.log('Pew Pew');
+    },
+  }
+};
+const {functionality} = robot;
+functionality.fireLaser();
+
+// Some built-in objects
+const robot = {
+	model: 'SAL-1000',
+  mobile: true,
+  sentient: false,
+  armor: 'Steel-plated',
+  energyLevel: 75
+};
+
+    // Object.keys(obj) – Returns an array of an object's property names (keys)
+const robotKeys = Object.keys(robot);
+console.log(robotKeys);
+
+    // Object.entries(obj) – Returns an array of [key, value] pairs
+const robotEntries = Object.entries(robot);
+console.log(robotEntries);
+
+    // Object.assign(target, source) – Copies properties from one object into another
+const newRobot = Object.assign({laserBlaster: true, voiceRecognition: true}, robot);
+console.log(newRobot);
+
+/*
+The object that a method belongs to is called the calling object.
+The this keyword refers to the calling object and can be used to access properties of the calling object.
+Methods do not automatically have access to other internal properties of the calling object.
+The value of this depends on where the this is being accessed from.
+We cannot use arrow functions as methods if we want to access other internal properties.
+JavaScript objects do not have built-in privacy — however, there are conventions to follow to notify other developers about the intent of the code.
+The usage of an underscore before a property name means that the original developer did not intend for that property to be directly changed.
+Setter and getter methods allow for more detailed ways of accessing and assigning properties.
+Factory functions allow us to create object instances quickly and repeatedly.
+There are different ways to use object destructuring: one way is the property value shorthand and another is destructured assignment.
+*/
