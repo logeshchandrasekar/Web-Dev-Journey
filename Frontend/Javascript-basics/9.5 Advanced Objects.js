@@ -1,4 +1,4 @@
-// the this. keyword
+// The this. keyword
 const robot = {
   model : '1E78V2',
   energyLevel : 100,
@@ -7,3 +7,61 @@ const robot = {
   }
 };
 console.log(robot.provideInfo());
+
+// Arrow function and this keyword
+const robot = {
+  energyLevel: 100,
+  // Arrow function should not be used !
+  checkEnergy() {
+    console.log(`Energy is currently at ${this.energyLevel}%.`)
+  }
+}
+robot.checkEnergy();
+
+// Type coersion (concept)
+const robot = {
+  _energyLevel: 100,
+  recharge(){
+    this._energyLevel += 30;
+    console.log(`Recharged! Energy is currently at ${this._energyLevel}%.`);
+  }
+};
+robot._energyLevel = 'high';
+robot.recharge();
+
+// Getters - get and return the internal properties of an object.
+const robot = {
+  _model: '1E78V2',
+  _energyLevel: 100,
+  get energyLevel() {
+    if(typeof this._energyLevel === 'number') {
+    return 'My current energy level is ' + this._energyLevel
+    } else {
+      return 'System malfunction: cannot retrieve energy level'
+    }
+  }
+};
+console.log(robot.energyLevel);
+
+// Setters - reassign values of existing properties within an object.
+const robot = {
+  _model: '1E78V2',
+  _energyLevel: 100,
+  _numOfSensors: 15,
+  get numOfSensors() {
+    if(typeof this._numOfSensors === 'number'){
+      return this._numOfSensors;
+    } else {
+      return 'Sensors are currently down.'
+    }
+  },
+  set numOfSensors(num) {
+    if (typeof num === 'number' && num >= 0){
+      this._numOfSensors = num;
+    } else {
+      console.log('Pass in a number that is greater than or equal to 0');
+    }
+  }
+};
+robot.numOfSensors = 50;
+console.log(robot.numOfSensors);
