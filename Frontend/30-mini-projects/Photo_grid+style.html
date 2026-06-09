@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>photo grid 3x3</title>
+    <style>
+    .photo-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+  .photo-item {
+    aspect-ratio: 1;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+  }
+  .photo-item .ph {
+    width: 100%; height: 100%;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 32px; transition: transform .3s;
+  }
+  .photo-item:hover .ph { transform: scale(1.1); }
+  .photo-item .overlay {
+    position: absolute; inset: 0;
+    background: rgba(0,0,0,.35); opacity: 0;
+    display: flex; align-items: center; justify-content: center;
+    color: #fff; font-size: 13px; font-weight: 600;
+    transition: opacity .3s;
+  }
+  .photo-item:hover .overlay { opacity: 1; }
+
+    </style>
+    <body>
+        <section class="section" id="tab-3">
+            <h2>Photo Gallery</h2>
+            <div class="photo-grid">
+                <div class="photo-item" style="background:#ffa321;"><div class="ph">🌅</div><div class="overlay">Sunrise</div></div>
+                <div class="photo-item" style="background:#74ff6a;"><div class="ph">🌿</div><div class="overlay">Plant</div></div>
+                <div class="photo-item" style="background:#83c9ff;"><div class="ph">🌊</div><div class="overlay">Ocean</div></div>
+                <div class="photo-item" style="background:#ea87c9;"><div class="ph">🌸</div><div class="overlay">Flower</div></div>
+                <div class="photo-item" style="background:#ac77da;"><div class="ph">🦋</div><div class="overlay">Butterfly</div></div>
+                <div class="photo-item" style="background:#ff3939;"><div class="ph">❤️</div><div class="overlay">Heart</div></div>
+                <div class="photo-item" style="background:#253a55;"><div class="ph">🏔️</div><div class="overlay">Mountain</div></div>
+                <div class="photo-item" style="background:#0ece6b;"><div class="ph">🌴</div><div class="overlay">Tree</div></div>
+                <div class="photo-item" style="background:#fff1f2;"><div class="ph">🌙</div><div class="overlay">Moon</div></div>
+            </div>
+        </section>
+    </body>
+</html>

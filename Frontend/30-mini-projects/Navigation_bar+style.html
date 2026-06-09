@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Navigation bar</title>
+<style>
+  .nav-bar {
+    background: #80b1ff; box-shadow: 0 2px 12px rgba(0,0,0,.1);
+    padding: 0 24px; display: flex; align-items: center;
+    justify-content: space-between; height: 60px;
+    border-radius: 12px; position: sticky; top: 0;
+  }
+  .nav-bar .logo { font-weight: 700; font-size: 20px; color: #0c1013; }
+  .nav-bar ul { list-style: none; display: flex; gap: 28px; }
+  .nav-bar ul a {
+    text-decoration: none; color: #3c3c3c; font-size: 14px;
+    padding-bottom: 2px; border-bottom: 2px solid transparent;
+    transition: color .2s, border-color .2s;
+  }
+  .nav-bar ul a:hover { color: #6b4ff7; border-bottom-color: #6b4ff7; }
+  .nav-bar ul a.nav-active { color: #6b4ff7; border-bottom-color: #4f8ef7; }
+  .nav-placeholder {
+    background: #8daddd; border-radius: 0 0 12px 12px;
+    padding: 40px; text-align: center; color: #3342cb; font-size: 14px;
+  }
+</style>
+</head>
+<body>
+    <section>
+  <h2>Navigation Bar</h2>
+  <nav class="nav-bar">
+    <div class="logo">My Portfolio</div>
+    <ul>
+      <li><a href="#" class="nav-active">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Projects</a></li>
+      <li><a href="#">Blog</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+</section>
+</body>
+</html>
