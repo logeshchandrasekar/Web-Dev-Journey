@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Button set</title>
+<style>
+    .btn-showcase {
+    display: flex; flex-wrap: wrap; gap: 16px; justify-content: center;
+  }
+
+  .abtn {
+    padding: 12px 28px; font-size: 14px; font-weight: 600;
+    border-radius: 8px; cursor: pointer; border: none;
+    outline: none; transition-duration: .25s;
+    transition-property: transform, background, box-shadow, letter-spacing, color, border-color;
+  }
+
+  .abtn-scale { background: #4f8ef7; color: #fff; }
+  .abtn-scale:hover { transform: scale(1.08); }
+
+  .abtn-shadow { background: #9b59b6; color: #fff; }
+  .abtn-shadow:hover { box-shadow: 0 8px 24px rgba(155,89,182,.5); transform: translateY(-3px); }
+
+  .abtn-fill {
+    background: transparent; color: #e74c3c;
+    border: 2px solid #e74c3c; position: relative; overflow: hidden; z-index: 0;
+  }
+  .abtn-fill::after {
+    content: ''; position: absolute; inset: 0;
+    background: #e74c3c; transform: scaleX(0);
+    transform-origin: left; transition: transform .25s; z-index: -1;
+  }
+  .abtn-fill:hover::after { transform: scaleX(1); }
+  .abtn-fill:hover { color: #fff; }
+
+  .abtn-space { background: #1abc9c; color: #fff; letter-spacing: 0; }
+  .abtn-space:hover { letter-spacing: 4px; background: #16a085; }
+
+  @keyframes shake {
+    0%,100% { transform: translateX(0); }
+    20% { transform: translateX(-5px); }
+    40% { transform: translateX(5px); }
+    60% { transform: translateX(-4px); }
+    80% { transform: translateX(4px); }
+  }
+  .abtn-shake { background: #e67e22; color: #fff; }
+  .abtn-shake:hover { animation: shake .4s ease; }
+</style>
+</head>
+<body>
+    <section class="section" id="tab-6">
+  <h2>Animated Button Set</h2><br>
+  <span class="concept-tag">5 hover animations :</span>
+  <div class="btn-showcase">
+    <button class="abtn abtn-scale">Scale Up</button>
+    <button class="abtn abtn-shadow">Shadow Pop</button>
+    <button class="abtn abtn-fill">Fill Slide</button>
+    <button class="abtn abtn-space">Spacing</button>
+    <button class="abtn abtn-shake">Shake</button>
+  </div>
+</section>
+</body>
+</html>
