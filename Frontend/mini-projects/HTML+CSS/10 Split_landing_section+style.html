@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Split Landing Section</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f5f5f5;
+    }
+
+    .split-section {
+      display: flex;
+      min-height: 100vh;
+    }
+
+    .text-side {
+      flex: 1;
+      background: #ffffff;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 60px 50px;
+    }
+
+    .text-side .label {
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: #888;
+      margin-bottom: 16px;
+    }
+
+    .text-side h1 {
+      font-size: 40px;
+      font-weight: 700;
+      color: #1a1a1a;
+      line-height: 1.2;
+      margin-bottom: 20px;
+    }
+
+    .text-side p {
+      font-size: 16px;
+      color: #555;
+      line-height: 1.7;
+      margin-bottom: 32px;
+      max-width: 440px;
+    }
+
+    .btn-group {
+      display: flex;
+      gap: 12px;
+    }
+
+    .btn-primary {
+      padding: 12px 28px;
+      background: #ff2525;
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      font-size: 15px;
+      cursor: pointer;
+    }
+
+    .btn-secondary {
+      padding: 12px 28px;
+      background: transparent;
+      color: #ff2525;
+      border: 2px solid #ff2525;
+      border-radius: 6px;
+      font-size: 15px;
+      cursor: pointer;
+    }
+
+    .image-side {
+      flex: 1;
+      background: #ff2525;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .image-side img {
+      width: 80%;
+      max-width: 420px;
+      border-radius: 12px;
+      display: block;
+    }
+
+    .image-placeholder {
+      width: 340px;
+      height: 260px;
+      background: rgba(255, 255, 255, 0.15);
+      border-radius: 12px;
+      border: 2px dashed rgba(255, 255, 255, 0.4);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: rgba(255, 255, 255, 0.8);
+      font-size: 14px;
+      gap: 10px;
+    }
+
+    .image-placeholder span {
+      font-size: 48px;
+    }
+
+    @media (max-width: 768px) {
+      .split-section {
+        flex-direction: column;
+      }
+
+      .text-side {
+        padding: 40px 24px;
+      }
+
+      .image-side {
+        min-height: 280px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <section class="split-section">
+
+    <div class="text-side">
+      <p class="label">Welcome to our platform</p>
+      <h1>Build great products with ease</h1>
+      <p>
+        Our tools help you design, develop, and ship faster than ever.
+        No complex setup — just focus on what matters most: your product.
+      </p>
+      <div class="btn-group">
+        <button class="btn-primary">Get Started</button>
+        <button class="btn-secondary">Learn More</button>
+      </div>
+    </div>
+
+    <div class="image-side">
+      <div class="image-placeholder">
+        <span>📁</span>
+        <p>Place your file here</p>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
