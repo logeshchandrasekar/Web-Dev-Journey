@@ -1,0 +1,150 @@
+* {
+  box-sizing: border-box;
+}
+/* *{
+    margin: 0;
+    padding: 0;
+}
+NOTE: Use the above code to change the default box model of the browser while developing
+and some additional selectors besides box model is used, for a complete web page */
+body {
+  background-color: white;
+  font-family: 'Raleway', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation ul {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.navigation li {
+  font-weight: 100;
+  letter-spacing: 2px;
+  padding: 20px;
+}
+
+.navigation  li.logo {
+  color: black;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 4px;
+}
+
+.donate{
+  visibility: hidden;
+}
+
+#banner {
+  background-image: url("https://content.codecademy.com/courses/web-101/unit-6/htmlcss1-img_tahoe.jpeg");
+  background-size: cover;
+  background-position: bottom center;
+  height: 700px;
+  width: 100%;
+}
+
+#banner .content h1 {
+  border: 3px solid white;
+  position: relative;
+  top: 50px;
+  width: 400px;
+  margin: 0 auto;
+}
+
+#main {
+  margin: 0 auto;
+  padding: 40px;
+  text-align: center;
+  width: 400px;
+  height: 1000px;
+  overflow: scroll;
+}
+
+h1 {
+  color: white;
+  font-size: 42px;
+  font-weight: 600;
+  text-align: center;
+}
+
+h2 {
+  border: 1px dotted red;
+  color: red;
+  font-size: 14px;
+  line-height: 48px;
+  padding: 20px 30px;
+  margin: 30px 20px;
+  text-align: center;
+}
+
+h3 {
+  color: red;
+  font-size: 26px;
+  font-weight: 700;
+  padding: 20px 10px;
+}
+
+p {
+  color: grey;
+  font-size: 16px;
+  line-height: 48px;
+  margin-top: 60px;
+  padding: 10px 20px;
+}
+
+.pull-quote {
+  margin: 0 auto;
+  width: 400px;
+}
+
+.byline {
+  border-bottom: 1px solid LightGrey;
+  border-top: 1px solid LightGrey;
+  color: DarkGrey;
+  font-size: 14px;
+  font-weight: 200;
+}
+
+.share {
+  border: 1px solid LightGrey;
+  padding: 40px 0px;
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
+
+.share a {
+  background: red;
+  border: 1px solid red;
+  border-radius: 3px;
+  color: white;
+  display: inline-block;
+  margin: 10px;
+  padding: 14px;
+  text-decoration: none;
+}
+
+.share a:hover {
+  background: white;
+  border: 1px solid red;
+  color: red;
+}
+
+/*
+	* Box model — Defines how an element’s size and spacing are measured (content + padding + border + margin).
+	* Content (height & width) — The actual area that holds text or other content; you set its size with height and width (in px, %, etc.).
+	* Padding — Space inside the element between the content and the border; increases the clickable/visible interior without affecting neighboring elements.
+	* Border — The line that wraps the padding and content; can be styled (color, width, dashed/solid, etc.).
+	* Margin — Space outside the border that separates the element from other elements.
+	* Horizontal margins — Left and right margins add together between side-by-side elements (total space = right margin of one + left margin of the other).
+	* Vertical margins — Top and bottom margins between stacked elements collapse, meaning the space equals the larger of the two margins (not their sum).
+	* margin: 0 auto — A common shorthand to horizontally center a block element inside its parent when the element has an explicit width (0 sets top/bottom margins, auto makes left/right adjust).
+	* overflow — Controls what happens to content that doesn’t fit inside the element’s content area:
+		* visible — default; overflow shows outside the box.
+		* hidden — extra content is clipped (not shown).
+		* scroll — scrollbars appear so the user can scroll to see overflowed content.
+	* visibility — Shows or hides an element:
+		* visible — element is shown.
+		* hidden — element is invisible but still takes up layout space. */
