@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard Layout</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f0f2f5;
+    }
+
+    .layout {
+      display: flex;
+      height: 100vh;
+    }
+
+    .sidebar {
+      width: 220px;
+      background: #1e293b;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100vh;
+    }
+
+    .sidebar-logo {
+      padding: 20px 24px;
+      font-size: 18px;
+      font-weight: 700;
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+    }
+
+    .sidebar nav {
+      padding: 16px 0;
+      flex: 1;
+    }
+
+    .sidebar nav a {
+      display: block;
+      padding: 11px 24px;
+      color: #94a3b8;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    .sidebar nav a:hover {
+      background: rgba(255,255,255,0.06);
+      color: #fff;
+    }
+
+    .sidebar nav a.active {
+      background: #2563eb;
+      color: #fff;
+    }
+
+    .sidebar-footer {
+      padding: 16px 24px;
+      font-size: 12px;
+      color: #475569;
+      border-top: 1px solid rgba(255,255,255,0.08);
+    }
+
+    .main {
+      margin-left: 220px;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    .topbar {
+      height: 56px;
+      background: #ffffff;
+      border-bottom: 1px solid #e2e8f0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 24px;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    .topbar h2 {
+      font-size: 16px;
+      font-weight: 600;
+      color: #1a1a1a;
+    }
+
+    .topbar-right {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      font-size: 13px;
+      color: #555;
+    }
+
+    .topbar-right .avatar {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      background: #2563eb;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 13px;
+      font-weight: 600;
+    }
+
+    .content {
+      padding: 28px 24px;
+    }
+
+    .cards-row {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+      margin-bottom: 28px;
+    }
+
+    .stat-card {
+      background: #ffffff;
+      border-radius: 8px;
+      padding: 20px;
+      border: 1px solid #e2e8f0;
+    }
+
+    .stat-card .card-label {
+      font-size: 12px;
+      color: #64748b;
+      margin-bottom: 8px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .stat-card .card-value {
+      font-size: 26px;
+      font-weight: 700;
+      color: #1a1a1a;
+    }
+
+    .stat-card .card-change {
+      font-size: 12px;
+      color: #16a34a;
+      margin-top: 4px;
+    }
+
+    .bottom-row {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 16px;
+    }
+
+    .panel {
+      background: #ffffff;
+      border-radius: 8px;
+      border: 1px solid #e2e8f0;
+      padding: 20px;
+    }
+
+    .panel h3 {
+      font-size: 14px;
+      font-weight: 600;
+      color: #1a1a1a;
+      margin-bottom: 16px;
+    }
+
+    .bar-chart {
+      display: flex;
+      gap: 10px;
+      align-items: flex-end;
+      height: 140px;
+    }
+
+    .bar-group {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 6px;
+      flex: 1;
+    }
+
+    .bar {
+      width: 100%;
+      background: #2563eb;
+      border-radius: 4px 4px 0 0;
+    }
+
+    .bar-label {
+      font-size: 11px;
+      color: #64748b;
+    }
+
+    .recent-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 13px;
+    }
+
+    .recent-table th {
+      text-align: left;
+      padding: 6px 0;
+      color: #64748b;
+      font-weight: 600;
+      border-bottom: 1px solid #e2e8f0;
+    }
+
+    .recent-table td {
+      padding: 10px 0;
+      color: #1a1a1a;
+      border-bottom: 1px solid #f0f2f5;
+    }
+
+    .badge {
+      display: inline-block;
+      padding: 2px 8px;
+      border-radius: 4px;
+      font-size: 11px;
+      font-weight: 600;
+    }
+    
+    .badge-green { background: #dcfce7; color: #16a34a; }
+    .badge-yellow { background: #fef9c3; color: #ca8a04; }
+    .badge-red { background: #fee2e2; color: #dc2626; }
+  </style>
+</head>
+<body>
+  <div class="layout">
+    <aside class="sidebar">
+      <div class="sidebar-logo">Dashboard</div>
+      <nav>
+        <a href="#" class="active">Overview</a>
+        <a href="#">Analytics</a>
+        <a href="#">Products</a>
+        <a href="#">Orders</a>
+        <a href="#">Customers</a>
+        <a href="#">Reports</a>
+        <a href="#">Settings</a>
+      </nav>
+      <div class="sidebar-footer">version:1.0</div>
+    </aside>
+    <div class="main">
+      <header class="topbar">
+        <h2>Overview</h2>
+        <div class="topbar-right">
+          <span>Jun 2026</span>
+          <div class="avatar">LC</div>
+        </div>
+      </header>
+      <main class="content">
+        <div class="cards-row">
+          <div class="stat-card">
+            <p class="card-label">Total Revenue</p>
+            <p class="card-value">$1,48,295</p>
+            <p class="card-change">↑ 12% this month</p>
+          </div>
+          <div class="stat-card">
+            <p class="card-label">Total Orders</p>
+            <p class="card-value">1,842</p>
+            <p class="card-change">↑ 5% this month</p>
+          </div>
+          <div class="stat-card">
+            <p class="card-label">New Users</p>
+            <p class="card-value">384</p>
+            <p class="card-change">↑ 8% this month</p>
+          </div>
+          <div class="stat-card">
+            <p class="card-label">Conversion Rate</p>
+            <p class="card-value">30.6%</p>
+            <p class="card-change">↑ 0.4% this month</p>
+          </div>
+        </div>
+        <div class="bottom-row">
+          <div class="panel">
+            <h3>Monthly Revenue</h3>
+            <div class="bar-chart">
+              <div class="bar-group">
+                <div class="bar" style="height: 50%;"></div>
+                <span class="bar-label">Jan</span>
+              </div>
+              <div class="bar-group">
+                <div class="bar" style="height: 65%;"></div>
+                <span class="bar-label">Feb</span>
+              </div>
+              <div class="bar-group">
+                <div class="bar" style="height: 45%;"></div>
+                <span class="bar-label">Mar</span>
+              </div>
+              <div class="bar-group">
+                <div class="bar" style="height: 80%;"></div>
+                <span class="bar-label">Apr</span>
+              </div>
+              <div class="bar-group">
+                <div class="bar" style="height: 70%;"></div>
+                <span class="bar-label">May</span>
+              </div>
+              <div class="bar-group">
+                <div class="bar" style="height: 100%;"></div>
+                <span class="bar-label">Jun</span>
+              </div>
+            </div>
+          </div>
+          <div class="panel">
+            <h3>Recent Orders</h3>
+            <table class="recent-table">
+              <thead>
+                <tr>
+                  <th>Order</th>
+                  <th>Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>#1019</td>
+                  <td><span class="badge badge-green">Paid</span></td>
+                </tr>
+                <tr>
+                  <td>#1018</td>
+                  <td><span class="badge badge-yellow">Pending</span></td>
+                </tr>
+                <tr>
+                  <td>#1017</td>
+                  <td><span class="badge badge-green">Paid</span></td>
+                </tr>
+                <tr>
+                  <td>#1016</td>
+                  <td><span class="badge badge-red">Failed</span></td>
+                </tr>
+                <tr>
+                  <td>#1015</td>
+                  <td><span class="badge badge-green">Paid</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </main>
+    </div>
+  </div>
+</body>
+</html>
