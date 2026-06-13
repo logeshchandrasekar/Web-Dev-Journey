@@ -1,0 +1,21 @@
+a.{
+  transition-property: color;
+  transition-duration: 1s;
+  transition-timing-function: linear;
+  transition-delay: 500ms;
+  transition: color 1s linear 500ms,
+            font-size: 700ms ease-in 100ms;
+  transition: all 1.2s ease-out 0.2s;
+}
+
+/*
+CSS Transitions have 4 components:
+
+- A property that will transition.
+- The duration which describes how long the transition takes.
+- The delay to pause before the transition will take place.
+- The timing function that describes the transition’s acceleration.
+- The shorthand property can be used to describe all four components of a transition at once.
+    [By using the comma (,) operator, many transitions can be described in one CSS rule.]
+- 'all' is also a valid transition property that causes every changing property to transition.
+*/
