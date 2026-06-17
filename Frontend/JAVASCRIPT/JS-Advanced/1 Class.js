@@ -40,8 +40,15 @@ console.log(nursePriya.remainingVacationDays); // logs value by using a getter f
 nursePriya.addCertification('Genetics'); // adding a array input in the instance using a method from subclass
 console.log(nursePriya.certifications); // logs the values from the instance using a getter from subclass
 
-// we can create as many subclasses as we want including getters and methods in it.
-/* Reason for using a superclass is
-- better readability 
-- reducing number of lines
-- to make convenient changes on common properties shared by many subclasses. 
+/*
+- Classes are templates for objects
+- JavaScript calls a constructor method when we create a new instance of a class.
+- Inheritance is when we create a parent class with properties and methods that we can extend to child classes.
+- We use the extends keyword to create a subclass.
+- The super() method calls the constructor() of a parent class.
+- we can create as many subclasses as we want including getters and methods in it.
+- Reason for using a superclass is
+ -- better readability 
+ -- reducing number of lines
+ -- to make convenient changes on common properties shared by many subclasses.
+*/
