@@ -30,5 +30,5 @@ const surgeonChandru = new Surgeon('Chandrasekar', 'Orthopedics'); // new instan
 
 console.log(surgeonLogesh.name); //logs name
 console.log(surgeonLogesh.department); //logs department
-surgeonLogesh.takeVacationDays(3); // updates input
+surgeonLogesh.takeVacationDays(3); // updates input by calling method with a argument
 console.log(surgeonlogesh.remainingVacationDays); // logs new value
