@@ -1,3 +1,5 @@
+// COMMON JS MODULES AND THEIR IMPLEMENTATION
+
 /* 1. shape-area.js */
 const { PI } = Math;
 
