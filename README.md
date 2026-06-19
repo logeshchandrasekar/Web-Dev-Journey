@@ -4,7 +4,7 @@
 
 - Structurized by :
 #### ```Frontend```& ```Backend``` : -- ```HTML5```, ```CSS3```, ```JS ES6+``` & ```Node.js``` etc.
-#### ```Database``` -- ```SQL```, ```MongoDB``` etc.
+#### ```Database``` -- ```SQL```, ```Postgre SQL```, ```MongoDB``` etc.
 #### ```Frameworks``` & ```Libraries``` -- ```Express.js```, ```React```, ```Django```, ```FastAPI```, ```Tailwind``` etc.
 #### ```DevOps``` -- ```Git & Github```, ```Docker```, ```Kubernetes``` etc.
 
