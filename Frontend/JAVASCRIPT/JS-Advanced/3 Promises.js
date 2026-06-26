@@ -42,3 +42,39 @@ console.log("This is the last line of code in app.js.");
   This is the last line of code in app.js.
   say my name ! (timeout function triggered after delay) 
 */
+
+//---------------------------------------------------------------//
+
+// 3. Success and Failure Callback Functions :
+  // promise function
+let prom = new Promise((resolve, reject) => {
+  let num = Math.random();
+  if (num < .5 ){
+    resolve('Yay!');
+  } else {
+    reject('Ohhh noo!');
+  }
+});
+
+  // callback function for promise resolve
+const handleSuccess = (resolvedValue) => {
+  console.log(resolvedValue);
+};
+
+  //callback function for promise reject
+const handleFailure = (rejectionReason) => {
+  console.log(rejectionReason);
+};
+
+  //.then() method with two callback functions for both scenarios
+prom.then(handleSuccess, handleFailure);
+
+/*
+output:
+if resolve : Yay!
+if reject : Ohh noo!
+*/
+
+//---------------------------------------------------------------//
+
+// 4. 
