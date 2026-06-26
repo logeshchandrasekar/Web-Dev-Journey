@@ -77,4 +77,11 @@ if reject : Ohh noo!
 
 //---------------------------------------------------------------//
 
-// 4. 
+// 4. using catch() for failure callback (seperation of concerns) :
+prom
+ .then(handleSuccess)
+ .catch(handleFailure);
+
+// Same output as previous code will be run with these method
+
+//---------------------------------------------------------------//
