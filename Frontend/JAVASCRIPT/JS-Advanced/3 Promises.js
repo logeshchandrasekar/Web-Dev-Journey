@@ -131,3 +131,59 @@ checkInventory(order)
 */
 
 //---------------------------------------------------------------//
+
+// 6. using promise.all() :
+
+	/* Create a function that returns a promise for checking an item's availability.
+	 - Resolves (success) 80% of the time
+     - Rejects (failure) 20% of the time */
+const checkAvailability = (item, distributor) => {
+  return new Promise((resolve, reject) => {
+    // Log when the "async" check starts
+    console.log(`Checking availability of ${item} at ${distributor}...`);
+    // Simulate an asynchronous delay (like a network request)
+    setTimeout(() => {
+    // Randomly decide whether the item is in stock
+      const inStock = Math.random() < 0.8; // 80% chance to resolve
+    // If in stock, resolve with a success message
+      if (inStock) {
+        resolve(`${item} are in stock at ${distributor}`);
+      } else {
+    // If not in stock, reject with an error message
+        reject(`${item} is not available from ${distributor}`);
+      }
+    }, 300);
+  });
+};
+
+	/* Define what to do when Promise.all() succeeds (all promises resolve).
+	 - Promise.all returns an array of resolved values. */
+const onFulfill = (items) => {
+	// Log each resolved availability message on its own line
+  console.log(items.join('\n'));
+
+   // Confirm all items are available and proceed with placing an order
+  console.log('Every item was available from the distributor. Placing order now.');
+};
+
+	/* Define what to do when Promise.all() fails (any promise rejects).
+	 - Promise.all rejects with the first rejection reason it encounters. */
+const onReject = (error) => {
+   // Log the error message (e.g., which item was unavailable)
+  console.log(error);
+};
+
+	/* Create three independent promises by calling checkAvailability()
+	 - Each call starts immediately, so checks can run concurrently. */
+const checkSunglasses = checkAvailability('sunglasses', 'Favorite Supply Co.');
+const checkPants = checkAvailability('pants', 'Favorite Supply Co.');
+const checkBags = checkAvailability('bags', 'Favorite Supply Co.');
+
+	/* Run all three promises in parallel with Promise.all.
+	 - If all resolve: .then(onFulfill) runs
+	 - If any rejects: .catch(onReject) runs */
+Promise.all([checkSunglasses, checkPants, checkBags])
+  .then(onFulfill)   // Handle success case
+  .catch(onReject);  // Handle failure case
+
+//---------------------------------------------------------------//
