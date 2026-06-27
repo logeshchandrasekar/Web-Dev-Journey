@@ -85,3 +85,49 @@ prom
 // Same output as previous code will be run with these method
 
 //---------------------------------------------------------------//
+
+// 5. Chaining multiple promises (composition) :
+function checkInventory(order) {
+  return Promise.resolve([order, 50]); // [order, totalCost]
+}
+
+function processPayment(resolvedValueArray) {
+  const [order, totalCost] = resolvedValueArray;
+  return Promise.resolve([order, "TRACK123"]); // [order, trackingNumber]
+}
+
+function shipOrder(resolvedValueArray) {
+  const [order, trackingNumber] = resolvedValueArray;
+  return Promise.resolve(`Shipped! Tracking: ${trackingNumber}`);
+}
+
+const order = {
+  items: [["sunglasses", 1], ["bags", 2]],
+  giftcardBalance: 79.82
+};
+
+checkInventory(order)
+  .then((resolvedValueArray) => {
+    return processPayment(resolvedValueArray);
+  })
+  .then((resolvedValueArray) => {
+    return shipOrder(resolvedValueArray);
+  })
+  .then((successMessage) => {
+    console.log(successMessage);
+  })
+  .catch((errorMessage) => {
+    console.log(errorMessage);
+  });
+
+/* explanation :
+	1. checkInventory(order) resolves to [order, totalCost].
+	2. The first .then() returns processPayment(resolvedValueArray),
+     so the chain waits and passes the next value.
+	3. The next .then() returns shipOrder(resolvedValueArray) to keep the chain going.
+	4. The final .then() logs the success message:
+     Shipped! Tracking: TRACK123
+	5. .catch() logs any error if one of the promises rejects.
+*/
+
+//---------------------------------------------------------------//
