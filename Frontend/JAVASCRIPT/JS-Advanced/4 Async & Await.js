@@ -38,7 +38,7 @@ const brainstormDinner = () => {
   return new Promise((resolve, reject) => {
     // Start the decision process
     console.log(`I have to decide what's for dinner...`);
-    // Simulate delays using setTimeout (nested callbacks)
+    // Simulating delays using setTimeout (nested callbacks)
     setTimeout(() => {
       console.log('Should I make salad...?');
       setTimeout(() => {
@@ -48,7 +48,7 @@ const brainstormDinner = () => {
           setTimeout(() => {
             console.log('Should I make chicken...?');
             // Resolve the Promise with the final meal
-            resolve('beans');
+            resolve('biriyani');
           }, 1000);
         }, 1000);
       }, 1000);
@@ -56,19 +56,18 @@ const brainstormDinner = () => {
   });
 };
 
-// i - Native Promise version (then)
-function nativePromiseDinner() {
+// i - Promise version (.then) :
+const promiseDinner = () => {
   brainstormDinner().then((meal) => {
     // Log the resolved meal
     console.log(`I'm going to make ${meal} for dinner.`);
   });
 }
 
-// ii - async/await version
-async function announceDinner() {
+// ii - async/await version :
+const announceDinner = async () => {
   // Await the Promise result (meal)
   let meal = await brainstormDinner();
-
   // Log after the Promise resolves
   console.log(`I'm going to make ${meal} for dinner.`);
 }
@@ -78,12 +77,11 @@ nativePromiseDinner();
 announceDinner();
 
 /* Note :
-	* It defines brainstormDinner(), which returns a Promise and simulates a “decision” process with nested setTimeout calls.
-    After the timed steps, it resolves with the string 'beans'.
-	* It shows two ways to handle the resolved value:
+	* The brainstormDinner(), which returns a Promise and simulates a “decision” process with nested setTimeout calls.
+    After the timed steps, it resolves with the string 'biriyani'.
+	* There are two ways to handle the resolved value:
 		i. Native Promise (then): nativePromiseDinner() calls brainstormDinner().then(...) and logs the final dinner choice.
 		ii. Async/Await: announceDinner() uses let meal = await brainstormDinner(); and then logs the same result after the Promise resolves.
-	* Both approaches produce the same outcome, but async/await provides a cleaner, more readable flow.
-*/
+	* Both approaches produce the same outcome, but async/await provides a cleaner, more readable flow. */
 
 //-------------------------------------------------------------------------------------------------------------------------------------//
