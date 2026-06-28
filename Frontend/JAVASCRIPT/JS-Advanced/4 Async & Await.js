@@ -1,4 +1,4 @@
-// 1. The Async keyword :
+// 1. The async keyword :
   // i - manually returning a new Promise :
 const withConstructor = (num) => {
   return new Promise((resolve, reject) => {
@@ -32,7 +32,7 @@ withAsync(100)              // Calls withAsync(100) and logs the resolved value 
 
 //-------------------------------------------------------------------------------------------------------------------------------------//
 
-// 2. The Await operator :
+// 2. The await operator :
     // Function that returns a Promise
 const brainstormDinner = () => {
   return new Promise((resolve, reject) => {
@@ -83,5 +83,28 @@ announceDinner();
 		i. Native Promise (then): nativePromiseDinner() calls brainstormDinner().then(...) and logs the final dinner choice.
 		ii. Async/Await: announceDinner() uses let meal = await brainstormDinner(); and then logs the same result after the Promise resolves.
 	* Both approaches produce the same outcome, but async/await provides a cleaner, more readable flow. */
+
+//-------------------------------------------------------------------------------------------------------------------------------------//
+
+// 3. The proper async/await function :
+const shopForFood = () => {
+  return new Promise((resolve, reject) => {
+	const foodTypes = ['Idly', 'Dosa', 'Fried Rice', 'Biriyani', 'Pizza'];
+  setTimeout(()=>{
+    let randomIndex = Math.floor(Math.random() * foodTypes.length);
+    let foodType = foodTypes[randomIndex];
+    console.log(`2. I bought ${foodType} because it is my favorite.`);
+   resolve(foodType);
+  }, 1000);
+});
+};
+
+const getFood = async () => {
+  console.log(`1. Heading to the store to buy food...`);
+  let value = await shopForFood();
+  console.log(`3. Great! I'm eating ${value} for dinner tonight!`);
+}
+
+getFood();
 
 //-------------------------------------------------------------------------------------------------------------------------------------//
