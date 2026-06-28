@@ -86,7 +86,7 @@ announceDinner();
 
 //-------------------------------------------------------------------------------------------------------------------------------------//
 
-// 3. The proper async/await function :
+// 3. The proper async/await function (example) :
 const shopForFood = () => {
   return new Promise((resolve, reject) => {
 	const foodTypes = ['Idly', 'Dosa', 'Fried Rice', 'Biriyani', 'Pizza'];
@@ -106,5 +106,66 @@ const getFood = async () => {
 }
 
 getFood();
+
+//-------------------------------------------------------------------------------------------------------------------------------------//
+
+// 4. Handling dependent promises :
+const shopForIngredients = () => {
+  return new Promise((resolve, reject) => {
+    const ingredients = [
+      "idli rice",
+      "urad dal",
+      "Ragi",
+      "Wheat"
+    ];
+
+    setTimeout(() => {
+      const randomIndex = Math.floor(Math.random() * ingredients.length);
+      const ingredient = ingredients[randomIndex];
+      console.log(`I bought ${ingredient} from the local market.`);
+      resolve(ingredient);
+    }, 1000);
+  });
+};
+
+const prepareBatter = (ingredient) => {
+  return new Promise((resolve, reject) => {
+    console.log("Time to prepare the idli batter...");
+
+    setTimeout(() => {
+      console.log(`The batter is ready using ${ingredient}.`);
+      resolve(true);
+    }, 2000);
+  });
+};
+
+const steamIdlis = (batterReady) => {
+  return new Promise((resolve, reject) => {
+    console.log("Steaming the idlis...");
+
+    setTimeout(() => {
+      if (batterReady) {
+        console.log("The idlis are soft and fluffy!");
+        resolve("\n Hot Idlis with Sambar and Coconut Chutney are ready!");
+      } else {
+        reject("The batter is not ready.");
+      }
+    }, 2000);
+  });
+};
+
+	// The main function
+async function makeIdli() {
+    // Awaits a randomly resolved ingredient from the Promise
+    const ingredient = await shopForIngredients();
+    // Passes resolved ingredient — awaits batter preparation
+    const batterReady = await prepareBatter(ingredient);
+    // Resolves final meal string if batterReady is truthy, else rejects
+    const meal = await steamIdlis(batterReady);
+    // Logs the final resolved value
+    console.log(meal);
+}
+	// Run the program
+makeIdli();
 
 //-------------------------------------------------------------------------------------------------------------------------------------//
