@@ -72,8 +72,8 @@ const announceDinner = async () => {
   console.log(`I'm going to make ${meal} for dinner.`);
 }
 
-// Run both examples
-nativePromiseDinner();
+// Running both examples
+promiseDinner();
 announceDinner();
 
 /* Note :
