@@ -169,3 +169,40 @@ async function makeIdli() {
 makeIdli();
 
 //-------------------------------------------------------------------------------------------------------------------------------------//
+
+// 5. Handling errors using try & catch :
+let randomNum = () => {
+ let num = Math.random();
+ if (num < .5 ){
+   return true;
+ } else {
+   return false;
+ }
+};
+
+const cookBiriyani = () => {
+ return new Promise((resolve, reject) => {
+   console.log('Putting the biriyani in the cooker');
+   setTimeout(()=>{
+     let success = randomNum();
+     if(success){
+       resolve('Biriyani');
+     } else {
+       reject('Dinner is ruined!');
+     }
+   }, 1000);
+ });
+};
+
+async function hostDinnerParty() {
+  try {
+    let dinner = await cookBiriyani();
+    console.log(`${dinner} is served!`)
+    }
+  catch (error) {
+    console.log(error);
+    console.log('Ordering a pizza!');
+  }
+}
+
+hostDinnerParty();
