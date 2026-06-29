@@ -37,11 +37,11 @@ setTimeout(usingSTO, 100);
   // last print statement to run
 console.log("This is the last line of code in app.js.");
 
-/* output :
+	/* output :
   This is the first line of code in app.js.
   This is the last line of code in app.js.
   say my name ! (timeout function triggered after delay) 
-*/
+	*/
 
 //---------------------------------------------------------------//
 
@@ -69,11 +69,11 @@ const handleFailure = (rejectionReason) => {
   //.then() method with two callback functions for both scenarios
 prom.then(handleSuccess, handleFailure);
 
-/*
-output:
-if resolve : Yay!
-if reject : Ohh noo!
-*/
+	/*
+	output:
+	if resolve : Yay!
+	if reject : Ohh noo!
+	*/
 
 //---------------------------------------------------------------//
 
@@ -82,7 +82,7 @@ prom
  .then(handleSuccess)
  .catch(handleFailure);
 
-// Same output as previous code will be run with these method
+	// Same output as previous code will be run with these method
 
 //---------------------------------------------------------------//
 
@@ -120,7 +120,7 @@ checkInventory(order)
     console.log(errorMessage);
   });
 
-/* explanation :
+	/* explanation :
 	1. checkInventory(order) resolves to [order, totalCost].
 	2. The first .then() returns processPayment(resolvedValueArray),
      so the chain waits and passes the next value.
@@ -128,7 +128,7 @@ checkInventory(order)
 	4. The final .then() logs the success message:
      Shipped! Tracking: TRACK123
 	5. .catch() logs any error if one of the promises rejects.
-*/
+	*/
 
 //---------------------------------------------------------------//
 
@@ -188,7 +188,7 @@ Promise.all([checkSunglasses, checkPants, checkBags])
 
 //---------------------------------------------------------------//
  
-/* Notes : 
+/* General Notes : 
 - Promises are JavaScript objects that represent the eventual result of an asynchronous operation.
 - Promises can be in one of three states: pending, resolved, or rejected.
 - A promise is settled if it is either resolved or rejected.
