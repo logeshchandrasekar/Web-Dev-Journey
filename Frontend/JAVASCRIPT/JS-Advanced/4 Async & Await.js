@@ -27,8 +27,8 @@ withAsync(100)              // Calls withAsync(100) and logs the resolved value 
   console.log(` withAsync(100) returned a promise which resolved to: ${resolveValue}.`);
 });
 
-/* Note : Both approaches produce the same result — a resolved Promise.
-            The async keyword is simply a cleaner, shorthand way to return Promises without manually using the new Promise constructor. */
+	/* Note : Both approaches produce the same result — a resolved Promise.
+              The async keyword is simply a cleaner, shorthand way to return Promises without manually using the new Promise constructor. */
 
 //-------------------------------------------------------------------------------------------------------------------------------------//
 
@@ -56,7 +56,7 @@ const brainstormDinner = () => {
   });
 };
 
-// i - Promise version (.then) :
+	// i - Promise version (.then) :
 const promiseDinner = () => {
   brainstormDinner().then((meal) => {
     // Log the resolved meal
@@ -64,7 +64,7 @@ const promiseDinner = () => {
   });
 }
 
-// ii - async/await version :
+	// ii - async/await version :
 const announceDinner = async () => {
   // Await the Promise result (meal)
   let meal = await brainstormDinner();
@@ -72,11 +72,11 @@ const announceDinner = async () => {
   console.log(`I'm going to make ${meal} for dinner.`);
 }
 
-// Running both examples
+	// Running both examples
 promiseDinner();
 announceDinner();
 
-/* Note :
+	/* Note :
 	* The brainstormDinner(), which returns a Promise and simulates a “decision” process with nested setTimeout calls.
     After the timed steps, it resolves with the string 'biriyani'.
 	* There are two ways to handle the resolved value:
