@@ -165,12 +165,61 @@ async function makeIdli() {
     // Logs the final resolved value
     console.log(meal);
 }
-	// Run the program
+	// invoke the function
 makeIdli();
 
 //-------------------------------------------------------------------------------------------------------------------------------------//
 
-// 5. Handling errors using try & catch :
+// 5. Handling Independent promises :
+let cookBeans = () => {
+  return new Promise ((resolve, reject) => {
+   setTimeout(()=>{
+     resolve('beans');
+   }, 1000);
+ });
+};
+
+let steamBroccoli = () => {
+ return new Promise ((resolve, reject) => {
+   setTimeout(()=>{
+     resolve('broccoli');
+   }, 1000);
+ });
+};
+
+let cookRice = () => {
+ return new Promise ((resolve, reject) => {
+   setTimeout(()=>{
+     resolve('rice');
+   }, 1000);
+ });
+};
+
+let bakeChicken = () => {
+ return new Promise ((resolve, reject) => {
+   setTimeout(()=>{
+     resolve('chicken')
+   }, 1000);
+ });
+};
+
+	// Main function
+async function serveDinner() {
+ const vegetablePromise = steamBroccoli(); // Start broccoli promise
+ const starchPromise = cookRice();         // Start rice promise
+ const proteinPromise = bakeChicken();     // Start chicken promise
+ const sidePromise = cookBeans();          // Start beans promise
+ 
+ 	// Await all promises together — all run in parallel, saving time !
+ console.log(`Dinner is served. We're having ${await vegetablePromise}, ${await starchPromise}, ${await proteinPromise}, and ${await sidePromise}.`);
+}
+
+	// Invoke the async function
+serveDinner();
+
+//-------------------------------------------------------------------------------------------------------------------------------------//
+
+// 6. Handling errors using try & catch :
 let randomNum = () => {
  let num = Math.random();
  if (num < .5 ){
@@ -194,15 +243,22 @@ const cookBiriyani = () => {
  });
 };
 
+	// Main async function
 async function hostDinnerParty() {
   try {
+    // Await the biriyani promise — pauses until resolved or rejected
     let dinner = await cookBiriyani();
+    // Log success message if promise resolves
     console.log(`${dinner} is served!`)
     }
   catch (error) {
+    // Log the rejection reason (e.g., 'Dinner is ruined!')
     console.log(error);
+    // Fallback plan if cooking fails
     console.log('Ordering a pizza!');
   }
 }
-
+	// Invoke the async function
 hostDinnerParty();
+
+//-------------------------------------------------------------------------------------------------------------------------------------//
