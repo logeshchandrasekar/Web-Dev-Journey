@@ -40,7 +40,7 @@ console.log(nursePriya.remainingVacationDays); // logs value by using a getter f
 nursePriya.addCertification('Genetics'); // adding a array input in the instance using a method from subclass
 console.log(nursePriya.certifications); // logs the values from the instance using a getter from subclass
 
-/*
+/* General Notes :
 - Classes are templates for objects
 - JavaScript calls a constructor method when we create a new instance of a class.
 - Inheritance is when we create a parent class with properties and methods that we can extend to child classes.
