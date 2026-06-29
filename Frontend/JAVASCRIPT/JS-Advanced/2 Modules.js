@@ -26,7 +26,7 @@ const areaFunctions = require('./shape-area.js');
 const areaOfCircle = areaFunctions.circleArea(radius);
 const areaOfSquare = areaFunctions.squareArea(sideLength);
 
-/*
+/* General Notes :
 - module.exports () 
   -- To create a module, you simply have to create a new file where the variables and functions can be declared.
      Then, to make these functions available to other files, add them as properties to the built-in module.exports object.
