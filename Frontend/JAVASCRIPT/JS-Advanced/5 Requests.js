@@ -22,10 +22,14 @@ const getSuggestions = () => {
   }, networkError => {
     console.log(networkError.message) // Logs any network/connection errors
   })
+  .then((jsonResponse) => {
+    console.log(jsonResponse);
+  })
 }
 
 /* Notes :
   We called the fetch() function to make a GET request to the Datamuse API endpoint.
   Then, we chained a .then() method and passed two callback functions as arguments 
   - one to handle the promise if it resolves
-  - one to handle network errors if the promise is rejected.*/
+  - one to handle network errors if the promise is rejected.
+  - Then, a second .then() method logs the json response to console. */
