@@ -22,18 +22,18 @@ The Tree Structure :
       </body>
     </html>
 
-// - The browser builds a tree like this:
+/* - The browser builds a tree like this:
 document
  └── html
       └── body
            ├── h1 ("Hello")
-           └── p ("Welcome to my site") 
+           └── p ("Welcome to my site") */
            
  /* Here, Every tag becomes a node.
     document is the root of everything — it's your entry point into this tree from JavaScript.*/
 
-// 3. Example : TO TRY THIS ON YOUR OWN AND GRASP THE CONCEPT :
+/* 3. Example : TO TRY THIS ON YOUR OWN AND GRASP THE CONCEPT :
 - Create a simple index.html file with an h1, a p, and a button.
 - Open it in your browser, open DevTools Console.
 - Type document , and expand the tree in the console output — click through and find your h1 and p inside it.
-- Type document.body.children , and see what it returns.
+- Type document.body.children , and see what it returns. */
