@@ -14,7 +14,7 @@
 
 - Did ```mini-projects``` for respective languages, covering most of the concepts accordingly
 
-#### Chronological Order to be followed, if you dive into web development ( Directory wise ):
+### Chronological Order to be followed, if you dive into web development ( Directory wise ):
 
 #### /  ```Frontend```
 1. HTML
