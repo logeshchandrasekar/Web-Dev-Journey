@@ -24,6 +24,7 @@
 5. 30 Frontend Mini Projects
 6. JAVASCRIPT : JS-Advanced
 7. JAVASCRIPT : JS-DOM [ Zip file]
-- [ Download the ```2 js-dom-mastery``` zip file in your system and read the 'Readme' file for the instructions,<br>
+- [ Download the ```2 Js DOM Learning Program``` zip file in your system from the JAVASCRIPT/JS-DOM Directory.<br>
+   unzip then read the 'Readme' file for the instructions.<br>
    It is an interactive webpage based learning program ]
 - (IF YOUR PRIMARY GOAL IS TO LEARN WEB INTERACTIVITY, YOU CAN JUMP TO STEP 7 & LEARN STEP 6 AT YOUR WILL LATER)
