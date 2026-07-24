@@ -81,4 +81,4 @@ Given any URL, can you point at each piece and name it — protocol, domain, por
 implicit), path, query parameters, fragment — without hesitating?
 
 ---
-Previous: [Chapter 1 — How the Web Works](01-how-the-web-works.md) · Next: **[Chapter 3 → HTTP Request & Response Model](03-http-request-response-model.md)**
+Previous: [Chapter 1 — How Web Works](1-How-web-works.md) · Next: **[Chapter 3 → HTTP Request & Response Model](03-http-request-response-model.md)**
