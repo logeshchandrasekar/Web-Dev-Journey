@@ -3,9 +3,9 @@
 ### Here i will commit all the topics i learned about my web development journey !!
 
 - Structurized by :
-  #### ```Frontend```& ```Backend``` : -- ```HTML5```, ```CSS3```, ```JS ES6+``` & ```Node.js``` etc.
+  #### ```Frontend```& ```Backend``` : -- ```HTML5```, ```CSS3```, ```JS ES6+```, ```REST API``` & ```Node.js``` etc.
   #### ```Database``` -- ```SQL```, ```Postgre SQL```, ```MongoDB``` etc.
-  #### ```Frameworks``` & ```Libraries``` -- ```Express.js```, ```React```, ```Django```, ```FastAPI```, ```Tailwind``` etc.
+  #### ```Frameworks``` & ```Libraries``` -- ```Express.js```, ```React```, ```FastAPI```, ```Tailwind``` etc.
   #### ```DevOps``` -- ```Git & Github```, ```Docker```, ```Kubernetes``` etc.
 
 - All resides in detail in respective directory
@@ -14,17 +14,25 @@
 
 - Did ```mini-projects``` for respective languages, covering most of the concepts accordingly
 
-### Chronological Order to be followed, if you dive into web development ( Directory wise ):
+### Chronological Order to be followed, if you are into web development ( Directory wise ):
 
 #### /  ```Frontend```
-1. HTML
-2. CSS : CSS-Basics
-3. CSS : CSS-Advanced
-4. JAVASCRIPT : JS-Basics
-5. 30 Frontend Mini Projects
-6. JAVASCRIPT : JS-Advanced
-7. JAVASCRIPT : JS-DOM [ Zip file]
-- [ Download the ```2 Js DOM Learning Program``` zip file in your system from the JAVASCRIPT/JS-DOM Directory.<br>
-   unzip then read the 'Readme' file for the instructions.<br>
-   It is an interactive webpage based learning program ]
-- (IF YOUR PRIMARY GOAL IS TO LEARN WEB INTERACTIVITY, YOU CAN JUMP TO STEP 7 & LEARN STEP 6 AT YOUR WILL LATER)
+1. / HTML
+2. / CSS : CSS-Basics
+3. / CSS : CSS-Advanced
+4. / JAVASCRIPT : JS-Basics
+5. / 30 Frontend Mini Projects (Practice)
+6. / JAVASCRIPT : JS-Advanced
+7. / JAVASCRIPT : JS-DOM [ Zip file]
+- NOTE :
+  - [ Download the ```2 Js DOM Learning Program``` zip file in your system from the JAVASCRIPT/JS-DOM Directory.<br>
+     unzip then read the 'Readme' file for the instructions.<br>
+     It is an interactive webpage based learning program ]
+  - (IF YOUR PRIMARY GOAL IS TO LEARN WEB INTERACTIVITY, YOU CAN JUMP TO STEP 7 & LEARN STEP 6 AT YOUR WILL LATER)
+
+#### / ```Backend```
+1. / Git & Github
+2. / HTTP WEB JSON API
+
+#### / ```DAtabase```
+1. / SQL
