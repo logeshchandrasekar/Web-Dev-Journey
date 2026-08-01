@@ -1,7 +1,5 @@
 # Chapter 3 — HTTP Request & Response Model
 
-**Phase:** HTTP · **Suggested time:** 1–2 days · **Status:** Not Started
-
 ## What You Must Understand
 
 Request line, response line, headers, body, client/server communication.
@@ -85,4 +83,3 @@ Given a raw HTTP request or response (just the text, no DevTools), can you point
 start line, headers, and body, and say what each header is for?
 
 ---
-Previous: [Chapter 2 — URLs, Domains & Ports](02-urls-domains-ports.md) · Next: **[Chapter 4 → HTTP Methods](04-http-methods.md)**
