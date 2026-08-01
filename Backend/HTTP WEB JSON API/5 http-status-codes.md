@@ -1,7 +1,5 @@
 # Chapter 5 — HTTP Status Codes
 
-**Phase:** HTTP · **Suggested time:** 1 day · **Status:** Not Started
-
 ## What You Must Understand
 
 2xx, 3xx, 4xx, 5xx and common codes such as 200, 201, 204, 400, 401, 403, 404, 500.
@@ -80,4 +78,3 @@ Without looking anything up: what's the difference between 401 and 403? Between 
 500? What status code should a successful POST return, and why not just 200?
 
 ---
-Previous: [Chapter 4 — HTTP Methods](04-http-methods.md) · Next: **[Chapter 6 → HTTP Headers](06-http-headers.md)**
