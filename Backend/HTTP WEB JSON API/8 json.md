@@ -1,7 +1,5 @@
 # Chapter 8 — JSON
 
-**Phase:** Data Format · **Suggested time:** 1–2 days · **Status:** Not Started
-
 ## What You Must Understand
 
 Objects, arrays, strings, numbers, booleans, null, nesting.
@@ -90,4 +88,3 @@ Can you list all six JSON value types from memory? Given a paragraph describing 
 can you write valid JSON for it without needing to check syntax?
 
 ---
-Previous: [Chapter 7 — Request & Response Bodies](07-request-response-bodies.md) · Next: **[Chapter 9 → JSON.parse() & JSON.stringify()](09-json-parse-stringify.md)**
