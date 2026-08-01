@@ -1,7 +1,5 @@
 # Chapter 4 — HTTP Methods
 
-**Phase:** HTTP · **Suggested time:** 1 day · **Status:** Not Started
-
 ## What You Must Understand
 
 GET, POST, PUT, PATCH, DELETE and their purposes.
@@ -75,4 +73,3 @@ Given a scenario ("update just the price of a product" / "add a brand-new commen
 PUT and PATCH aren't interchangeable?
 
 ---
-Previous: [Chapter 3 — HTTP Request & Response Model](03-http-request-response-model.md) · Next: **[Chapter 5 → HTTP Status Codes](05-http-status-codes.md)**
