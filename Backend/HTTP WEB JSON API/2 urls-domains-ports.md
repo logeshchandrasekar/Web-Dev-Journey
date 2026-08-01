@@ -1,7 +1,5 @@
 # Chapter 2 — URLs, URIs, Domains & Ports
 
-**Phase:** Web Foundations · **Suggested time:** 1 day · **Status:** Not Started
-
 ## What You Must Understand
 
 Protocol, domain, port, path, query parameters, fragments.
