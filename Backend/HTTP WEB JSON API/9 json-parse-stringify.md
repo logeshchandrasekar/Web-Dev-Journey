@@ -1,7 +1,5 @@
 # Chapter 9 — JSON.parse() & JSON.stringify()
 
-**Phase:** Data Format · **Suggested time:** 1 day · **Status:** Not Started
-
 ## What You Must Understand
 
 Convert between JavaScript objects and JSON strings.
@@ -96,4 +94,3 @@ directly on raw response text before parsing it? Can you say which direction eac
 goes (stringify: object→string, parse: string→object) without hesitating?
 
 ---
-Previous: [Chapter 8 — JSON](08-json.md) · Next: **[Chapter 10 → Promises](10-promises.md)**
