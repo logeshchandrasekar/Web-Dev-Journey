@@ -1,7 +1,5 @@
 # Chapter 6 — HTTP Headers
 
-**Phase:** HTTP · **Suggested time:** 1–2 days · **Status:** Not Started
-
 ## What You Must Understand
 
 Content-Type, Accept, Authorization, caching-related headers, User-Agent.
@@ -72,4 +70,3 @@ every request rather than just once at login? Can you explain the difference bet
 `Content-Type` and `Accept` each describe?
 
 ---
-Previous: [Chapter 5 — HTTP Status Codes](05-http-status-codes.md) · Next: **[Chapter 7 → Request & Response Bodies](07-request-response-bodies.md)**
