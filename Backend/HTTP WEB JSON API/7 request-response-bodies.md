@@ -1,7 +1,5 @@
 # Chapter 7 — Request & Response Bodies
 
-**Phase:** HTTP · **Suggested time:** 1 day · **Status:** Not Started
-
 ## What You Must Understand
 
 What data is sent in a request body and returned in a response body.
@@ -98,4 +96,3 @@ Given any request in DevTools, can you correctly separate: the URL, the headers,
 body? Can you explain why a GET request usually has no body but a POST usually does?
 
 ---
-Previous: [Chapter 6 — HTTP Headers](06-http-headers.md) · Next: **[Chapter 8 → JSON](08-json.md)**
