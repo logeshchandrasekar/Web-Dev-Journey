@@ -1,7 +1,5 @@
 # Chapter 10 — Promises
 
-**Phase:** JavaScript Async · **Suggested time:** 1–2 days · **Status:** Not Started
-
 ## What You Must Understand
 
 Pending, fulfilled, rejected states and promise chaining.
@@ -110,7 +108,6 @@ without notes, why `.then()` chaining works — i.e. why you can attach another 
 after the first one?
 
 ---
-Previous: [Chapter 9 — JSON.parse() & JSON.stringify()](09-json-parse-stringify.md) · Next: **[Chapter 11 → async/await & try/catch](11-async-await-try-catch.md)**
 
 ## Chapters 1–10 done 🎉
 
