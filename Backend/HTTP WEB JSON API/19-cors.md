@@ -1,7 +1,5 @@
 # Chapter 19 — CORS
 
-**Phase:** Web Security · **Suggested time:** 1–2 days · **Status:** Not Started
-
 ## What You Must Understand
 
 Origins, same-origin policy, preflight requests, why browser requests can be blocked.
@@ -99,4 +97,3 @@ request "succeed" on the server but still fail in your browser console? What tri
 preflight `OPTIONS` request?
 
 ---
-Previous: [Chapter 18 — CRUD](18-crud.md) · Next: **[Chapter 20 → Authentication & Authorization Basics](20-authentication-authorization-basics.md)**
