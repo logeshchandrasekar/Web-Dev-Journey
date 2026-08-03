@@ -1,7 +1,5 @@
 # Chapter 20 — Authentication & Authorization Basics
 
-**Phase:** Web Security · **Suggested time:** 2–3 days · **Status:** Not Started
-
 ## What You Must Understand
 
 Cookies, sessions, tokens, Bearer tokens, Authorization header.
@@ -109,4 +107,3 @@ Explain authentication vs authorization in one sentence each. Why does a cookie 
 attached automatically but a token doesn't? Which status code pairs with which failure?
 
 ---
-Previous: [Chapter 19 — CORS](19-cors.md) · Next: **[Chapter 21 → Database Concepts](21-database-concepts.md)**
