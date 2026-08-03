@@ -1,7 +1,5 @@
 # Chapter 15 — Resource-Based URL Design
 
-**Phase:** REST API · **Suggested time:** 1 day · **Status:** Not Started
-
 ## What You Must Understand
 
 Nouns/resources, endpoint naming, collections and individual resources.
@@ -87,4 +85,3 @@ posts"), can you design both the collection and single-resource nested paths wit
 looking anything up?
 
 ---
-Previous: [Chapter 14 — What REST Is](14-what-rest-is.md) · Next: **[Chapter 16 → Path Parameters](16-path-parameters.md)**
