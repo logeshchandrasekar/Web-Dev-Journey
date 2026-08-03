@@ -1,7 +1,5 @@
 # Chapter 18 — CRUD
 
-**Phase:** REST API · **Suggested time:** 3–5 days · **Status:** Not Started
-
 ## What You Must Understand
 
 Create, Read, Update, Delete mapped to HTTP methods.
@@ -106,4 +104,3 @@ shape, body y/n, success status) from memory? Can you explain why `listTasks` do
 a body but `createTask` does?
 
 ---
-Previous: [Chapter 17 — Query Parameters](17-query-parameters.md) · Next: **[Chapter 19 → CORS](19-cors.md)**
