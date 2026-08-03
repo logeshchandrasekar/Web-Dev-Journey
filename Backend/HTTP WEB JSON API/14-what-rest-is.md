@@ -1,7 +1,5 @@
 # Chapter 14 — What REST Is
 
-**Phase:** REST API · **Suggested time:** 1 day · **Status:** Not Started
-
 ## What You Must Understand
 
 REST as an architectural style, resources, representations, HTTP-based communication.
@@ -85,4 +83,3 @@ In your own words, what's the difference between REST and `fetch()`? What does
 "representation" refer to in REST, and why does it matter that it's usually JSON?
 
 ---
-Previous: [Chapter 13 — POST, PUT, PATCH & DELETE with Fetch](13-post-put-patch-delete-fetch.md) · Next: **[Chapter 15 → Resource-Based URL Design](15-resource-based-url-design.md)**
