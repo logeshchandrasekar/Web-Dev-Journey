@@ -1,7 +1,5 @@
 # Chapter 11 — async/await & try/catch
 
-**Phase:** JavaScript Async · **Suggested time:** 1–2 days · **Status:** Not Started
-
 ## What You Must Understand
 
 Asynchronous flow, awaiting promises, handling errors.
@@ -105,4 +103,3 @@ Without notes: what does `await` actually do to a Promise? Why does `try`/`catch
 things one at a time?
 
 ---
-Previous: [Chapter 10 — Promises](10-promises.md) · Next: **[Chapter 12 → Fetch API](12-fetch-api.md)**
