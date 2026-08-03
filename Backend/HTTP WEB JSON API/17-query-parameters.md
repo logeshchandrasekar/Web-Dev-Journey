@@ -1,7 +1,5 @@
 # Chapter 17 — Query Parameters
 
-**Phase:** REST API · **Suggested time:** 1–2 days · **Status:** Not Started
-
 ## What You Must Understand
 
 Filtering, searching, sorting, pagination.
@@ -97,4 +95,3 @@ Name the four common uses of query parameters. Why is pagination necessary for l
 collections? What does `URLSearchParams` buy you over building the string by hand?
 
 ---
-Previous: [Chapter 16 — Path Parameters](16-path-parameters.md) · Next: **[Chapter 18 → CRUD](18-crud.md)**
