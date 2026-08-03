@@ -1,7 +1,5 @@
 # Chapter 12 — Fetch API
 
-**Phase:** JavaScript Networking · **Suggested time:** 2–3 days · **Status:** Not Started
-
 ## What You Must Understand
 
 GET requests, Response object, response.json(), response.ok, status.
@@ -106,4 +104,3 @@ Can you explain why `fetch()` doesn't throw an error for a 404 response? What do
 call?
 
 ---
-Previous: [Chapter 11 — async/await & try/catch](11-async-await-try-catch.md) · Next: **[Chapter 13 → POST, PUT, PATCH & DELETE with Fetch](13-post-put-patch-delete-fetch.md)**
