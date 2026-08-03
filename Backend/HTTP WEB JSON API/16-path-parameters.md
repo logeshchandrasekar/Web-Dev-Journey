@@ -1,7 +1,5 @@
 # Chapter 16 — Path Parameters
 
-**Phase:** REST API · **Suggested time:** 1 day · **Status:** Not Started
-
 ## What You Must Understand
 
 Dynamic resource identifiers such as `/users/42`.
@@ -85,4 +83,3 @@ each one means? What's the quick test for whether something should be a path par
 versus a query parameter?
 
 ---
-Previous: [Chapter 15 — Resource-Based URL Design](15-resource-based-url-design.md) · Next: **[Chapter 17 → Query Parameters](17-query-parameters.md)**
