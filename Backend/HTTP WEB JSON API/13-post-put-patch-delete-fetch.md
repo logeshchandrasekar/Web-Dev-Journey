@@ -1,7 +1,5 @@
 # Chapter 13 — POST, PUT, PATCH & DELETE with Fetch
 
-**Phase:** JavaScript Networking · **Suggested time:** 2–3 days · **Status:** Not Started
-
 ## What You Must Understand
 
 Sending data, headers, JSON.stringify(), request configuration.
@@ -99,4 +97,3 @@ Why must `body` be a string, and what happens if you forget `JSON.stringify()`? 
 DELETE request typically skip both `body` and `.json()`?
 
 ---
-Previous: [Chapter 12 — Fetch API](12-fetch-api.md) · Next: **[Chapter 14 → What REST Is](14-what-rest-is.md)**
