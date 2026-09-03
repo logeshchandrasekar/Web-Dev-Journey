@@ -79,3 +79,39 @@ WHERE name LIKE '%man%';
 SELECT name
 FROM movies 
 WHERE imdb_rating IS NOT NULL;
+
+-- 7.BETWEEN
+-- between operator is used in a clause to filter the result set within a certain range. It accepts two values that are either numbers, text, or dates.
+  -- EX: this statement filters the result set to only include movies with years from 1990 up to, and including 1999.
+SELECT *
+FROM movies
+WHERE year BETWEEN 1990 AND 1999;
+
+-- EX: When the values are text, BETWEEN filters the result set for within the alphabetical range.
+-- In this statement, BETWEEN filters the result set to only include movies with names that begin with the letter ‘A’ up to, but not including ones that begin with ‘J’.
+SELECT *
+FROM movies
+WHERE name BETWEEN 'A' AND 'J';
+-- However, if a movie has a name of simply ‘J’, it would actually match.
+-- This is because BETWEEN goes up to the second value — up to ‘J’.
+-- So the movie named ‘J’ would be included in the result set but not ‘Jaws’.
+
+-- 8.AND :
+-- Sometimes we want to combine multiple conditions in a WHERE clause to make the result set more specific and useful.
+-- One way of doing this is to use the AND operator.
+  -- EX: Here, we use the AND operator to only return 90’s romance movies.
+SELECT * 
+FROM movies
+WHERE year BETWEEN 1990 AND 1999
+AND genre = 'romance';
+-- With AND, both conditions must be true for the row to be included in the result.
+
+-- 9.OR :
+-- Similar to AND, the OR operator can also be used to combine multiple conditions in WHERE, but there is a fundamental difference:
+  -- AND operator displays a row if all the conditions are true.
+  -- OR operator displays a row if any condition is true.
+    -- EX: Suppose we want to check out a new movie or something action :
+SELECT *
+FROM movies
+WHERE year > 2014
+   OR genre = 'action';
