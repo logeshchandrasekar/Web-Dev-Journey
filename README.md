@@ -34,5 +34,5 @@
 1. / Git & Github
 2. / HTTP WEB JSON API
 
-#### / ```DAtabase```
+#### / ```Database```
 1. / SQL
