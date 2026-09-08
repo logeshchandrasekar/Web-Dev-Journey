@@ -133,3 +133,39 @@ ORDER BY year DESC;
 -- ASC is a keyword used in ORDER BY to sort the results in ascending order (low to high or A-Z).
 -- The column that we ORDER BY doesn’t even have to be one of the columns that we’re displaying.
 -- Note: ORDER BY always goes after WHERE (if WHERE is present).
+
+-- 11.LIMIT :
+-- LIMIT is a clause that lets you specify the maximum number of rows the result set will have.
+-- This saves space on our screen and makes our queries run faster.
+SELECT *
+FROM movies
+LIMIT 10;
+-- Here, we specify that the result set can’t have more than 10 rows.
+-- LIMIT always goes at the very end of the query. Also, it is not supported in all SQL databases.
+
+-- 12.CASE :
+-- A CASE Returns different output based on the conditions of each statement.(usually in the SELECT statement).
+-- It is SQL’s way of handling if-then logic.
+  -- EX: Suppose we want to condense the ratings in movies to three levels:
+  -- If the rating is above 8, then it is Fantastic.
+  -- If the rating is above 6, then it is Poorly Received.
+  -- Else, Avoid at All Costs.
+SELECT name,
+ CASE
+  WHEN imdb_rating > 8 THEN 'Fantastic'
+  WHEN imdb_rating > 6 THEN 'Poorly Received'
+  ELSE 'Avoid at All Costs'
+ END
+FROM movies;
+  -- Each WHEN tests a condition and the following THEN gives us the string if the condition is true.
+  -- The ELSE gives us the string if all the above conditions are false.
+  -- The CASE statement must end with END.
+  -- In the result, you have to scroll right because the column name is very long. To shorten it, we can rename the column to ‘Review’ using AS
+SELECT name,
+ CASE
+  WHEN imdb_rating > 8 THEN 'Fantastic'
+  WHEN imdb_rating > 6 THEN 'Poorly Received'
+  ELSE 'Avoid at All Costs'
+ END AS 'Review'
+FROM movies;
+-- Now the new column's name won't be that long. Also dont forget to add comma before the CASE Statement.
