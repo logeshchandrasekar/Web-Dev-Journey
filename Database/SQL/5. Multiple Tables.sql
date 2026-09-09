@@ -81,3 +81,38 @@ LEFT JOIN table2
   -- None of the values can be NULL.
   -- Each value must be unique (i.e., you can’t have two customers with the same customer_id in the customers table).
   -- A table can not have more than one primary key column.
+-- When the primary key for one table appears in a different table, it is called a foreign key.
+-- So customer_id is a primary key when it appears in customers, but a foreign key when it appears in orders.
+  --EX: Suppose Columbia University has two tables in their database:
+    -- The classes table contains information on the classes that the school offers. Its primary key is id.
+    -- The students table contains information on all students in the school. Its primary key is id.
+    -- It contains the foreign key class_id, which corresponds to the primary key of classes.
+    -- Now Performing an inner join of classes and students using the primary and foreign keys described above, and selecting all the columns looks like below.
+SELECT * FROM classes
+JOIN students
+ON classes.id = students.class_id;
+
+-- 5.CROSS JOIN :
+-- Sometimes, we just want to combine all rows of one table with all rows of another table.
+
+  -- EX: if we had a table of shirts and a table of pants, we might want to know all the possible combinations to create different outfits.
+  -- Our code might look like this:
+SELECT shirts.shirt_color, pants.pants_color
+FROM shirts
+CROSS JOIN pants;
+  -- The first line select the columns shirt_color and pants_color.
+  -- The second line pulls data from the table shirts.
+  -- The third line performs a CROSS JOIN with pants.
+-- Notice that cross joins don’t require an ON statement. You’re not really joining on any columns!
+
+  -- EX 2: If we have 3 different shirts (white, grey, and olive) and 2 different pants (light denim and black), the results might look like this:
+    shirt_color:  pants_color:
+    white	        light denim
+    white	        black
+    grey	        light denim
+    grey	        black
+    olive	        light denim
+    olive	        black
+  -- So, 3 shirts × 2 pants = 6 combinations!
+  -- This clothing example is fun, but it’s not very practically useful.
+-- A more common usage of CROSS JOIN is when we need to compare each row of a table to a list of values.
