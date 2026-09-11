@@ -29,10 +29,13 @@
      unzip then read the 'Readme' file for the instructions.<br>
      It is an interactive webpage based learning program ]
   - (IF YOUR PRIMARY GOAL IS TO LEARN WEB INTERACTIVITY, YOU CAN JUMP TO STEP 7 & LEARN STEP 6 AT YOUR WILL LATER)
+ 
+#### / ```DevOps```
+1. / Git & Github
 
 #### / ```Backend```
-1. / Git & Github
-2. / HTTP WEB JSON API
+1. / HTTP WEB JSON API
 
 #### / ```Database```
 1. / SQL
+2. Postgresql Guide
