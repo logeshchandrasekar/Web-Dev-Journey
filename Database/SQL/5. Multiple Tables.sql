@@ -116,3 +116,39 @@ CROSS JOIN pants;
   -- So, 3 shirts × 2 pants = 6 combinations!
   -- This clothing example is fun, but it’s not very practically useful.
 -- A more common usage of CROSS JOIN is when we need to compare each row of a table to a list of values.
+
+-- 6.UNION :
+-- Sometimes we just want to stack one dataset on top of the other. Well, the UNION operator allows us to do that.
+-- Suppose we have two tables and they have the same columns.
+  -- table1:
+    pokemon	    type
+    Bulbasaur	  Grass
+    Charmander	Fire
+    Squirtle	  Water
+  -- table2:
+    pokemon	    type
+    Snorlax	    Normal
+-- If we combine these two with UNION:
+SELECT *
+FROM table1
+UNION
+SELECT *
+FROM table2;
+-- The result would be:
+  -- table :
+    pokemon	    type
+    Bulbasaur	  Grass
+    Charmander	Fire
+    Squirtle	  Water
+    Snorlax	    Normal
+-- SQL has strict rules for appending data:
+  -- Tables must have the same number of columns.
+  -- The columns must have the same data types in the same order as the first table.
+
+-- SUMMARY :
+  -- JOIN will combine rows from different tables if the join condition is true.
+  -- LEFT JOIN will return every row in the left table, and if the join condition is not met, NULL values are used to fill in the columns from the right table.
+  -- Primary key is a column that serves a unique identifier for the rows in the table.
+  -- Foreign key is a column that contains the primary key to another table.
+  -- CROSS JOIN lets us combine all rows of one table with all rows of another table.
+  -- UNION stacks one dataset on top of another.
