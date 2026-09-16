@@ -141,6 +141,3 @@ Why doesn't `req.body` just exist automatically the way it effectively does when
 `fetch()`'s `response.json()` in the browser? What would happen if your server never called
 `res.end()` for some unmatched route? After building this by hand, can you explain in one
 sentence what a framework like Express is actually saving you from doing yourself?
-
----
-Previous: [Chapter 28f — Streams & Buffers](28f-streams-buffers.md) · Next: **[Chapter 28h → Error Handling, Signals & Graceful Shutdown](28h-error-handling-graceful-shutdown.md)**
