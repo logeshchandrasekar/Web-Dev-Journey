@@ -7,7 +7,7 @@ code across files using modules.
 
 ## The Core Idea
 
-Every line of JavaScript you've written so far (Chapters 1–20) ran **inside a browser** —
+Every line of JavaScript you've written so far ran **inside a browser** —
 which is why you had `document`, `window`, and `fetch()` available without importing
 anything. **Node.js is a way to run the exact same JavaScript language outside a browser** —
 on your own computer, or on a server — with a different set of built-in tools suited to
@@ -170,6 +170,3 @@ runs in, compared to browser code — even though the language is identical? Wha
 difference between `require()`/`module.exports` and `import`/`export`, and why shouldn't you
 mix them in one project? Why might a core module offer both a callback-style and a
 Promise-based version of the same function?
-
----
-Previous: [Chapter 27 — Schema Design & Constraints](27-schema-design-constraints.md) · Next: **[Chapter 28b → npm & package.json](28b-npm-package-json.md)**
