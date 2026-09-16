@@ -129,4 +129,3 @@ actually do to in-progress requests versus new incoming ones? Why do real deploy
 Node behind a process manager instead of a bare `node app.js`?
 
 ---
-Previous: [Chapter 28g — Building an HTTP Server From Scratch](28g-http-server-from-scratch.md) · Next: **[Chapter 28i → Child Processes, Worker Threads & Clustering](28i-child-processes-worker-threads-cluster.md)**
