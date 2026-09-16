@@ -134,9 +134,8 @@ What can a real debugger (via `--inspect`) do that `console.log` alone cannot? W
 worth deliberately breaking your own code once, after writing tests for it?
 
 ---
-Previous: [Chapter 28i — Child Processes, Worker Threads & Clustering](28i-child-processes-worker-threads-cluster.md) · **[Back to Index](00-index.md)**
 
-## Node.js Deep Dive complete 🎉 (28a through 28j)
+## Node.js Deep Dive complete
 
 You've now gone well past your tracker's "Node.js Fundamentals" row — you understand *why*
 Node behaves the way it does (the event loop), its core architectural pattern
@@ -145,8 +144,3 @@ for you (building a server by hand), how production apps stay resilient (error h
 graceful shutdown), how to escape the single-thread limit when you truly need to, and how to
 verify your own code automatically instead of only by eye. That's a genuinely confident,
 full picture of Node.js itself.
-
-Your tracker continues into **Express.js Fundamentals** next — and everything in this deep
-dive (especially Chapter 28g's raw server and 28e's EventEmitter pattern) will make Express
-feel like a shortcut for work you already understand, not new magic. Ask for "the next
-chapters" whenever you're ready to continue.
