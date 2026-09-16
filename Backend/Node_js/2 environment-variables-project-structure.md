@@ -150,10 +150,7 @@ even in a private repository? What does the `dotenv` package actually do? Why is
 example` committed to Git while `.env` itself never is? What's the practical purpose of
 `NODE_ENV`, and how might a real library change its behavior based on it?
 
----
-Previous: [Chapter 28b — npm & package.json](28b-npm-package-json.md) · Next: **[Chapter 28d → The Event Loop & Asynchronous I/O](28d-event-loop-async-io.md)**
-
-## Node.js Fundamentals (your tracker's 3 parts) done 🎉
+## Node.js Fundamentals done
 
 You now know how JavaScript runs outside the browser, how to bring in and manage
 third-party packages, and how to configure an app safely without hardcoding secrets. That
