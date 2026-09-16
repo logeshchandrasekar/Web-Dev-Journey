@@ -176,4 +176,3 @@ because of a slow database query, which of these three tools actually helps, and
 other two not apply to that specific problem?
 
 ---
-Previous: [Chapter 28h — Error Handling, Signals & Graceful Shutdown](28h-error-handling-graceful-shutdown.md) · Next: **[Chapter 28j → Testing & Debugging Node.js Applications](28j-testing-debugging.md)**
