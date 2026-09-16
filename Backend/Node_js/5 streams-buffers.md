@@ -134,4 +134,3 @@ handled chunks manually without it? Why is an incoming HTTP request body a reada
 rather than a value you get immediately?
 
 ---
-Previous: [Chapter 28e — Events & EventEmitter](28e-events-eventemitter.md) · Next: **[Chapter 28g → Building an HTTP Server From Scratch](28g-http-server-from-scratch.md)**
