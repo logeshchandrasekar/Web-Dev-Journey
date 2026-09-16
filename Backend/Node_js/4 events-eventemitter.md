@@ -143,4 +143,3 @@ objects (besides your own custom one) that are actually `EventEmitter`s undernea
 explain how you know.
 
 ---
-Previous: [Chapter 28d — The Event Loop & Asynchronous I/O](28d-event-loop-async-io.md) · Next: **[Chapter 28f → Streams & Buffers](28f-streams-buffers.md)**
