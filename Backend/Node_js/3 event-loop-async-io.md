@@ -141,4 +141,3 @@ I/O-bound work but poorly suited to heavy CPU-bound work on its own, and what do
 imply about wrapping a slow synchronous loop in a Promise?
 
 ---
-Previous: [Chapter 28c — Environment Variables & Project Structure](28c-environment-variables-project-structure.md) · Next: **[Chapter 28e → Events & EventEmitter](28e-events-eventemitter.md)**
