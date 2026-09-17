@@ -16,6 +16,12 @@
 
 ### Chronological Order to be followed, if you are into web development ( Directory wise ):
 
+#### / ```Python Programming```
+  - It is highly recommended to have a programming language in your hand before dive onto web development.
+  - Also it is a good practice to know python or any language before mastering a stack for yourself. So
+
+0. / Python Programming
+
 #### /  ```Frontend```
 1. / HTML
 2. / CSS : CSS-Basics
@@ -23,7 +29,7 @@
 4. / JAVASCRIPT : JS-Basics
 5. / 30 Frontend Mini Projects (Practice)
 6. / JAVASCRIPT : JS-Advanced
-7. / JAVASCRIPT : JS-DOM [ Zip file]
+7. / JAVASCRIPT : JS-DOM [ Zip file] (recommended)
 - NOTE :
   - [ Download the ```2 Js DOM Learning Program``` zip file in your system from the JAVASCRIPT/JS-DOM Directory.<br>
      unzip then read the 'Readme' file for the instructions.<br>
@@ -31,11 +37,17 @@
   - (IF YOUR PRIMARY GOAL IS TO LEARN WEB INTERACTIVITY, YOU CAN JUMP TO STEP 7 & LEARN STEP 6 AT YOUR WILL LATER)
  
 #### / ```DevOps```
-1. / Git & Github
+8. / Git & Github
 
 #### / ```Backend```
-1. / HTTP WEB JSON API
+9. / HTTP WEB JSON API
 
 #### / ```Database```
-1. / SQL
-2. Postgresql Guide
+10. / SQL
+11. / Postgresql Guide
+
+#### /```Backend```
+12. / Node.js
+
+#### /```DevOps```
+13. / N8N (optional)
