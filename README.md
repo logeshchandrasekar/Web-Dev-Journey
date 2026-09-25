@@ -17,10 +17,9 @@
 ### Chronological Order to be followed, if you are into web development ( Directory wise ):
 
 #### / ```Python Programming```
+prerequisite:- / Python (learn on your own source & pace)
   - It is highly recommended to have a programming language in your hand before dive onto web development.
   - Also it is a good practice to know python or any language before mastering a stack for yourself. So
-
-0. / Python Programming
 
 #### /  ```Frontend```
 1. / HTML
