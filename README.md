@@ -4,9 +4,9 @@
 
 - Structurized by :
   #### ```Frontend```& ```Backend``` : -- ```HTML5```, ```CSS3```, ```JS ES6+```, ```REST API``` & ```Node.js``` etc.
-  #### ```Database``` -- ```SQL```, ```Postgre SQL```, ```MongoDB``` etc.
-  #### ```Frameworks``` & ```Libraries``` -- ```Express.js```, ```React```, ```FastAPI```, ```Tailwind``` etc.
-  #### ```DevOps``` -- ```Git & Github```, ```N8N```, ```Docker```, ```Kubernetes``` etc.
+  #### ```Database``` :-- ```SQL```, ```Postgre SQL```, ```MongoDB``` etc.
+  #### ```Frameworks``` & ```Libraries``` :-- ```Express.js```, ```React```, ```FastAPI```, ```Tailwind``` etc.
+  #### ```DevOps``` :-- ```Git & Github```, ```N8N Automation```, ```Docker```, ```Kubernetes``` etc.
 
 - All resides in detail in respective directory
 
