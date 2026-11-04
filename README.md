@@ -5,7 +5,7 @@
 - Structurized by :
   #### ```Frontend```& ```Backend``` : -- ```HTML5```, ```CSS3```, ```JS ES6+```, ```REST API``` & ```Node.js``` etc.
   #### ```Database``` :-- ```SQL```, ```Postgre SQL```, ```MongoDB``` etc.
-  #### ```Frameworks``` & ```Libraries``` :-- ```Express.js```, ```React```, ```FastAPI```, ```Tailwind``` etc.
+  #### ```Frameworks``` & ```Libraries``` :-- ```FastAPI```, ```React```, ```Express.js```, ```Tailwind``` etc.
   #### ```DevOps``` :-- ```Git & Github```, ```N8N Automation```, ```Docker```, ```Kubernetes``` etc.
 
 - All resides in detail in respective directory
@@ -46,7 +46,8 @@ prerequisite:- / Python (learn on your own source & pace)
 11. / Postgresql Guide
 
 #### /```Backend```
-12. / Node.js
+12. / Node.js (or)
+13. / Flask [using python for web development]
 
 #### /```DevOps```
-13. / N8N (optional)
+14. / N8N (optional)
